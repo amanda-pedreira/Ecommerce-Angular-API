@@ -1,0 +1,11 @@
+{
+  "pessoas": [
+    {
+      "id": "2",
+      "nome": "Valentina",
+      "sobrenome": "Guimaraes",
+      "dtNascimento": "2007-08-14"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

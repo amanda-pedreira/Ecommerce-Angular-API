@@ -1,10 +1,57 @@
 .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #111;
+    color: white;
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.logo-footer {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logo-footer span {
+    color: #f05a00;
+}
+
+.footer p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 12px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer li:hover {
+    color: #f05a00;
+}
+
+.footer hr {
+    border-color: #333;
+    margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
+    padding-bottom: 25px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #888;
 }

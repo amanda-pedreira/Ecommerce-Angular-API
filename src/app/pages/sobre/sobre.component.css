@@ -1,0 +1,108 @@
+.sobre {
+  background-color: white;
+  color: #111;
+  min-height: 100vh;
+}
+
+.sobre-topo {
+  padding: 90px 0;
+}
+
+.subtitulo {
+  font-weight: bold;
+  color: #f05a00;
+  margin-bottom: 20px;
+}
+
+.sobre-topo h1 {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.texto-topo {
+  font-size: 18px;
+  color: #555;
+  max-width: 480px;
+}
+
+.imagem-sobre {
+  height: 360px;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numeros {
+  padding: 55px 0;
+}
+
+.numeros .container {
+  background-color: #f4f4f4;
+  padding: 45px 20px;
+}
+
+.numeros h2 {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.numeros p {
+  color: #555;
+  font-size: 15px;
+}
+
+.historia {
+  padding: 85px 0;
+}
+
+.historia h2,
+.mensagem h2 {
+  font-size: 42px;
+  font-weight: 300;
+  border-left: 4px solid #f05a00;
+  padding-left: 18px;
+}
+
+.historia p {
+  color: #444;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.mensagem {
+  padding: 50px 0 90px 0;
+}
+
+.mensagem p {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.caixa-mensagem {
+  background-color: #f05a00;
+  color: white;
+  padding: 55px;
+  border-radius: 4px;
+}
+
+.caixa-mensagem h3 {
+  font-size: 34px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.caixa-mensagem p {
+  color: white;
+}

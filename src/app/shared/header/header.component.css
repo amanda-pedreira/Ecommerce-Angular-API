@@ -1,42 +1,84 @@
+.faixa-frete {
+  background-color: #8a3a00;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
+  background-color: #f05a00;
+  padding: 25px 0;
 }
 
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 128px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+  color: #111;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-logo span {
+  font-weight: normal;
+}
+
+.campo-busca {
+  width: 45%;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  padding: 0 18px;
+  font-size: 16px;
+}
+
+.botao-carrinho {
+  background-color: white;
+  color: #1f2937;
+  border: none;
+  font-weight: bold;
+  padding: 13px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.menu-baixo {
+  background-color: white;
+  padding: 18px 0;
+  text-align: center;
 }
 
 .navbar-list {
-    list-style: none;
-    display: flex;
-    gap: 1.0rem;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  cursor: pointer;
 }
 
 .navbar-item a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
+  color: #111;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 .navbar-item a:hover {
-    color: #f0a500;
-}
-
-.active {
-    font-weight: bold;
-    border-bottom: 2px solid #f0a500;
+  color: #f05a00;
 }

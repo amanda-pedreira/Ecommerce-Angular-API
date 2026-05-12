@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PessoaService } from '../../core/services/pessoa.service';
-import { Pessoa } from '../../core/services/types/types';
+// import { PessoaService } from '../../core/services/pessoa.service';
+// import { Pessoa } from '../../core/types/types';
+import { PessoaServiceService } from '../../services/pessoa-service.service';
+import { Pessoa } from '../../model/tipos';
+import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -10,14 +13,25 @@ import { RouterLink } from '@angular/router';
   templateUrl: './pessoa-listagem.component.html',
   styleUrl: './pessoa-listagem.component.css'
 })
+
 export class PessoaListagemComponent implements OnInit {
   listaPessoas: Pessoa[] = [];
 
-  constructor(private service: PessoaService) { }
+  constructor(
+    private service: PessoaServiceService, 
+    private router: Router
+  ){}
 
   ngOnInit(): void {
+    this.service.listar().subscribe((pessoas)=>{
+      this.listaPessoas = pessoas;
+    });
+  }
 
-    this.listaPessoas = this.service.listar();
+  excluir(id:number){
+    this.service.excluir(id).subscribe(()=>{
+      
+    })
   }
 
 }
