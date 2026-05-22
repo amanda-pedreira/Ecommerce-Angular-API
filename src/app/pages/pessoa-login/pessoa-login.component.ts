@@ -25,7 +25,7 @@ export class PessoaLoginComponent {
 
       if(this.login == 'admin' && this.senha == '123'){
         alert(`Bem-vindo ${this.login} !`)
-        this.router.navigate(['/'])
+        this.router.navigate(['/admin'])
       }else{
         alert(`Dados Inválidos`)
       }

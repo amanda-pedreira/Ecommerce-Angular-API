@@ -1,0 +1,23 @@
+<div class="menu-admin">
+
+    <div class="logo-admin">
+
+        <div>
+            <h2>POWER SUPLEMENTOS</h2>
+            <p>Administradores</p>
+        </div>
+    </div>
+
+    <ul class="navbar-list">
+        @for (item of itensMenu; track item) {
+            <li class="navbar-item" routerLink="{{item.link}}">
+                <a>{{ item.label }}</a>
+            </li>
+        }
+    </ul>
+
+    <div class="logout-admin" routerLink="/">
+        <img src="assets/icons/logout.png" alt="sair">
+    </div>
+
+</div>

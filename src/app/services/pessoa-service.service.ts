@@ -16,7 +16,7 @@ export class PessoaServiceService {
     return this.service.get<Pessoa[]>(this.API)
   }
   
-  buscarPorId(id: number): Observable<Pessoa | undefined> {
+  buscarPorId(id: string): Observable<Pessoa | undefined> {
     return this.service.get<Pessoa>(this.API + `/${id}`);
   }
 

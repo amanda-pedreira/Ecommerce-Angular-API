@@ -1,3 +1,13 @@
-<input type="email" name="email" id="email" [(ngModel)]="login">
-<input type="password" name="senha" id="senha" [(ngModel)]="senha">
-<button (click)="onBotaoClicado()">Enviar</button>
+<div class="container-login">
+
+    <h1>Login Administrador</h1>
+
+    <input type="email" name="email" id="email" placeholder="Digite seu email" [(ngModel)]="login">
+
+    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" [(ngModel)]="senha">
+
+    <button (click)="onBotaoClicado()">
+        Entrar
+    </button>
+
+</div>

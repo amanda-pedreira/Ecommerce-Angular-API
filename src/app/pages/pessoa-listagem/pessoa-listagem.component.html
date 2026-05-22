@@ -6,6 +6,8 @@
 <th>Nome</th>
 <th>Sobrenome</th>
 <th>Data de Nascimento</th>
+<th>CPF</th>
+<th>Cargo</th>
 <th>Ações</th>
 </tr>
 </thead>
@@ -16,13 +18,15 @@
 <td>{{pessoa.nome}}</td>
 <td>{{pessoa.sobrenome}}</td>
 <td>{{pessoa.dtNascimento}}</td>
+<td>{{pessoa.cpf}}</td>
+<td>{{pessoa.cargo}}</td>
 <td>
- <button class="btn-editar" [routerLink]="['alterar', pessoa.id]">Editar</button>
+ <button class="btn-editar" [routerLink]="['/admin/alterar', pessoa.id]">Editar</button>
  <button class="btn-excluir" (click)="excluir(pessoa.id!)">Excluir</button>
 </td>
 </tr>
 }
 </tbody>
 </table>
-<button class="btn-incluir"  router-link="/pessoas/incluir">Incluir</button>
+<button class="btn-incluir" routerLink="/admin/incluir">Incluir</button>
 </div>

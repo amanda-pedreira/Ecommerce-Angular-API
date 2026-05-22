@@ -50,12 +50,27 @@
             <h3>Entre em contato</h3>
             <p>Preencha os campos abaixo e retornaremos em breve.</p>
 
-            <input type="text" placeholder="Seu nome">
-            <input type="email" placeholder="Seu email">
-            <input type="text" placeholder="Assunto">
-            <textarea placeholder="Mensagem"></textarea>
+            <label for="input-nome">Nome</label><br>
+            <input class="input-simples" id="input-nome" name="input-nome" type="test" [(ngModel)]="contatos.nome"/>
 
-            <button>ENVIAR MENSAGEM</button>
+            <label for="input-email">Email</label><br>
+            <input class="input-simples" id="input-email" name="input-email" type="test" [(ngModel)]="contatos.email"/>
+
+             <label for="input-assunto">Assunto</label><br>
+             <select class="input-simples" id="input-assunto" name="input-assunto" [(ngModel)]="contatos.assunto">
+                <option value="">Selecione</option>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+             </select>
+
+            <label for="input-mensagem">Mensagem</label><br>
+            <textarea class="input-mensagem" id="input-mensagem" name="input-mensagem" placeholder="Digite os detalhes do produto" rows="5" [(ngModel)]="contatos.mensagem"></textarea>
+
+       
+
+        <button class="input-submeter" (click)="submeter()" >
+            Enviar
+        </button>
           </div>
         </div>
 

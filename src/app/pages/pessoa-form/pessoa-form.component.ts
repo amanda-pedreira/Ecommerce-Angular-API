@@ -15,19 +15,20 @@ export class PessoaFormComponent {
 
   titulo:string = 'Cadastro de Admins';
 
-  pessoaId?:number;
+  pessoaId?: string;
 
   pessoa: Pessoa = {} as Pessoa;
 
 
 
   
-  constructor(private service: PessoaServiceService,
+  constructor(
+      private service: PessoaServiceService,
       private router: Router,
       private route: ActivatedRoute
     ) {
 
-      this.pessoaId = Number(this.route.snapshot.params['id']);
+      this.pessoaId = this.route.snapshot.params['id'];
       
       if (this.pessoaId) {
         service.buscarPorId(this.pessoaId).subscribe(pessoa => {
@@ -36,8 +37,24 @@ export class PessoaFormComponent {
             this.pessoa.nome = pessoa.nome;
             this.pessoa.sobrenome = pessoa.sobrenome;
             this.pessoa.dtNascimento = pessoa.dtNascimento;
+            this.pessoa.cpf = pessoa.cpf;
+            this.pessoa.cargo = pessoa.cargo;
           }
         })
       }
   }
+
+  submeter(){
+    if(this.pessoaId){
+      this.service.editar(this.pessoa).subscribe(() =>{
+        this.router.navigate(['listar'])
+      })
+    }else{
+      this.service.incluir(this.pessoa).subscribe(()=>{
+        this.router.navigate(['listar'])
+      })
+    }
+  }
+
+
 }

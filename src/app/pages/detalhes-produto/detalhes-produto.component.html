@@ -1,0 +1,33 @@
+<div class="detalhe-container">
+
+    <div class="imagem-produto">
+        <img [src]="produto.imagem">
+    </div>
+
+    <div class="info-produto">
+
+        <h1>{{ produto.nome }}</h1>
+
+        <p><strong>Categoria:</strong> {{ produto.categoria }}</p>
+
+        <p><strong>Preço:</strong> R$ {{ produto.preco }}</p>
+
+        <p><strong>Estoque:</strong> {{ produto.estoque }}</p>
+
+        <p><strong>Destaque:</strong> {{ produto.destaque }}</p>
+
+        <p><strong>Status:</strong> {{ produto.status }}</p>
+
+        <div class="descricao">
+            <h3>Detalhes do produto</h3>
+
+            <p>{{ produto.detalhes }}</p>
+        </div>
+
+        <button class="btn-comprar">
+            COMPRAR
+        </button>
+
+    </div>
+
+</div>

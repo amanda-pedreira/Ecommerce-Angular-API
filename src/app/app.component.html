@@ -1,8 +1,16 @@
-<app-header></app-header>
-<!-- <h1>Oii {{nome}}!</h1>
-<h3>Bem-vindos ao angular!</h3>
+<!-- Alteração: pra poder seguir com a página de admin sem o header e footer, criamos uma condição. -->
 
- -->
+<!-- @if(router.url !== '/admin' && router.url !== '/admin/incluir' && router.url !== '/admin/listagem' && router.url !== '/admin/alterar' && router.url !== '/admin/produtos/listagem' && router.url !== '/admin/produtos/incluir'){-->
 
-<router-outlet />
-<app-footer></app-footer>
+
+@if(!router.url.includes('/admin')){
+    <app-header></app-header> 
+}
+
+<router-outlet></router-outlet>
+
+
+
+@if(!router.url.includes('/admin')){
+  <app-footer></app-footer>
+}

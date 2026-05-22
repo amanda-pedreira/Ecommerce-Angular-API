@@ -1,1 +1,22 @@
-<p>cadastro-usuario works!</p>
+<div class="content-container">
+    <h1>{{ titulo }}</h1>
+    <form>
+
+        <label for="input-nome">Nome</label><br>
+        <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o primeiro nome" type="text" [(ngModel)]="usuario.nome"/>
+         
+        <label for="input-email">E-mail</label><br>
+        <input class="input-simples" id="input-email" name="input-email" type="email" [(ngModel)]="usuario.email"/>
+
+        <label for="input-telefone">Telefone</label><br>
+        <input class="input-simples" id="input-telefone" name="input-telefone" type="string" [(ngModel)]="usuario.telefone"/>
+       
+        <label for="input-senha">Senha</label><br>
+        <input class="input-simples" id="input-senha" name="input-senha" type="password" [(ngModel)]="usuario.senha"/>   
+
+        
+        <button class="input-submeter" (click)="submeter()" >
+            Cadastrar
+        </button>
+    </form>
+</div>

@@ -1,10 +1,89 @@
 {
   "pessoas": [
     {
-      "id": "2",
-      "nome": "Valentina",
-      "sobrenome": "Guimaraes",
-      "dtNascimento": "2007-08-14"
+      "id": "uYW3eml_mZQ",
+      "nome": "amanda",
+      "sobrenome": "pedreira",
+      "dtNascimento": "2006-07-31"
+    },
+    {
+      "id": "02fMnyWMn0o",
+      "nome": "amanda",
+      "sobrenome": "pedreiraa",
+      "dtNascimento": "2006-07-31",
+      "cpf": "50601442830",
+      "cargo": "teste"
+    },
+    {
+      "id": "H4WmA57BvMQ",
+      "nome": "testando",
+      "sobrenome": "silva",
+      "dtNascimento": "2011-11-11",
+      "cargo": "Estágiaria",
+      "poder": "Poder 1"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "fsgEa6PVOvc",
+      "nome": "Suplementoo",
+      "preco": "80",
+      "categoria": "Proteína",
+      "imagem": "https://images.pexels.com/photos/17820715/pexels-photo-17820715.jpeg",
+      "estoque": 10,
+      "status": "Ativo"
+    },
+    {
+      "id": "nnrH6yxLcHE",
+      "nome": "sup",
+      "preco": "10",
+      "categoria": "Energia",
+      "imagem": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
+      "estoque": 1,
+      "status": "Ativo"
+    },
+    {
+      "id": "p65uGaMp68I",
+      "nome": "33",
+      "preco": "0",
+      "categoria": "Proteína",
+      "imagem": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
+      "estoque": -1,
+      "detalhes": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
+      "destaque": "Sim",
+      "status": "Ativo"
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "qqqqqqqq",
+      "email": "qqqqqqq",
+      "assunto": "Sim",
+      "mensagem": "qqqqqqqqqqqqq",
+      "id": "7ROGCs32zYc"
+    },
+    {
+      "nome": "amanda",
+      "email": "teste@gmail.com",
+      "assunto": "Sim",
+      "mensagem": "g",
+      "id": "NPNaDEWLQAU"
+    }
+  ],
+  "usuario": [
+    {
+      "nome": "Amanda Luana Pedreira",
+      "email": "amandaluanap7@gmail.com",
+      "telefone": "11949074140",
+      "senha": "123456",
+      "id": "SrIH3dMugdc"
+    },
+    {
+      "nome": "Amanda Luana Pedreira",
+      "email": "amandaluanap7@gmail.com",
+      "telefone": "11949074140",
+      "senha": "123456",
+      "id": "_0j_6kJLyuU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

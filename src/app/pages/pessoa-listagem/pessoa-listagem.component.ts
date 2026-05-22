@@ -20,7 +20,7 @@ export class PessoaListagemComponent implements OnInit {
   constructor(
     private service: PessoaServiceService, 
     private router: Router
-  ){}
+  ){} 
 
   ngOnInit(): void {
     this.service.listar().subscribe((pessoas)=>{
@@ -29,9 +29,11 @@ export class PessoaListagemComponent implements OnInit {
   }
 
   excluir(id:number){
-    this.service.excluir(id).subscribe(()=>{
-      
-    })
+    if(id){
+      this.service.excluir(id).subscribe(() => {
+        window.location.reload()
+      })
+    }
   }
 
 }
