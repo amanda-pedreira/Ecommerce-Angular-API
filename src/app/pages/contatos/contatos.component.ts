@@ -24,7 +24,7 @@ export class ContatosComponent {
   submeter(){
   this.service.incluir(this.contatos).subscribe(()=>{
     alert('Mensagem enviada com sucesso!');
-    this.router.navigate(['/'])
+    this.router.navigate(['/contatos']);
   })
 }
 

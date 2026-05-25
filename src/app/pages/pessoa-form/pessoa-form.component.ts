@@ -13,7 +13,7 @@ import { Pessoa } from '../../model/tipos';
 })
 export class PessoaFormComponent {
 
-  titulo:string = 'Cadastro de Admins';
+  titulo:string = 'Cadastro de Funcionários';
 
   pessoaId?: string;
 
@@ -35,10 +35,12 @@ export class PessoaFormComponent {
           if (pessoa) {
             this.pessoa.id = pessoa.id;
             this.pessoa.nome = pessoa.nome;
-            this.pessoa.sobrenome = pessoa.sobrenome;
             this.pessoa.dtNascimento = pessoa.dtNascimento;
             this.pessoa.cpf = pessoa.cpf;
             this.pessoa.cargo = pessoa.cargo;
+            this.pessoa.usuario = pessoa.usuario;
+            this.pessoa.senha = pessoa.senha;
+            this.pessoa.status = pessoa.status;
           }
         })
       }
@@ -51,6 +53,7 @@ export class PessoaFormComponent {
       })
     }else{
       this.service.incluir(this.pessoa).subscribe(()=>{
+        alert('Funcionário cadastrado com sucesso!');
         this.router.navigate(['listar'])
       })
     }

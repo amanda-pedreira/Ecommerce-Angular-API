@@ -30,12 +30,12 @@ export class PessoaLoginComponent {
 
       const usuarioEncontrado = lista.find(pessoa =>
 
-        pessoa.email == this.login &&
+        pessoa.usuario == this.login &&
         pessoa.senha == this.senha
 
       )
 
-      if(usuarioEncontrado){
+      if(usuarioEncontrado && usuarioEncontrado.cargo.toLowerCase() === 'administrador' && usuarioEncontrado.status.toLowerCase() === 'ativo'){
 
         alert('Login realizado')
 
@@ -43,7 +43,7 @@ export class PessoaLoginComponent {
 
       }else{
 
-        alert('Email ou senha inválidos')
+        alert('Login ou senha inválidos, ou usuário não é administrador ou está inativo.')
 
       }
 

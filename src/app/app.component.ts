@@ -11,6 +11,8 @@ import { ContatosComponent } from "./pages/contatos/contatos.component";
 import { FooterComponent } from './shared/footer/footer.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { LoginUsuarioComponent } from './pages/login-usuario/login-usuario.component';
+import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfil-usuario.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 
 @Component({

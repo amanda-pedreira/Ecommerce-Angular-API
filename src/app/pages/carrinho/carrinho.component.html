@@ -1,0 +1,98 @@
+<div class="pagina-carrinho">
+
+    <div class="container-carrinho">
+
+        <div class="lista-carrinho">
+
+            <h1>Meu Carrinho</h1>
+
+            @for(produto of listaCarrinho; track produto){
+
+                <div class="card-carrinho">
+
+                    <img [src]="produto.imagem" alt="Produto">
+
+                    <div class="info-carrinho">
+
+                        <h2>{{ produto.nome }}</h2>
+
+                        <p>
+                            {{ produto.detalhes }}
+                        </p>
+
+                        <span class="preco">
+                            R$ {{ produto.preco }}
+                        </span>
+
+                        <div class="quantidade">
+
+                            <button>-</button>
+
+                            <span>1</span>
+
+                            <button>+</button>
+
+                        </div>
+
+                        <span
+                            class="remover"
+                            (click)="removerProduto(produto)">
+
+                            Remover produto
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+        <div class="resumo-carrinho">
+
+            <h2>Resumo do pedido</h2>
+
+            <div class="linha-resumo">
+            <span>Subtotal</span>
+            <strong>R$ {{ total.toFixed(2) }}</strong>
+        </div>
+
+        <div class="linha-resumo">
+            <span>Frete</span>
+            <strong>R$ 19.90</strong>
+        </div>
+
+        <div class="linha-resumo">
+            <span>Desconto</span>
+            <strong>R$ {{ desconto.toFixed(2) }}</strong>
+        </div>
+
+        <div class="cupom">
+            <input
+                type="text"
+                placeholder="Cupom de desconto"
+                [(ngModel)]="cupom">
+
+            <button (click)="aplicarCupom()">
+                Aplicar
+            </button>
+        </div>
+
+        <div class="total">
+            <span>Total</span>
+            <strong>
+                R$ {{ (valorFinal() + 19.90).toFixed(2) }}
+            </strong>
+        </div>
+
+            <button class="btn-finalizar">
+                Finalizar compra
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

@@ -15,6 +15,10 @@ export class HeaderComponent {
     { label: 'Login', link: '/login-usuario' },
   ]
 
+  itemCarrinho = [
+    { label: 'Carrinho', link: '/carrinho' },
+  ]
+
   itensMenu = [
     { label: 'Início', link: '/' },
     { label: 'Produtos', link: '/produtos' },
@@ -23,6 +27,7 @@ export class HeaderComponent {
   ]
 
   itensSubmenu = [
+    { label: 'Todos os produtos', link: '/produtos' },
     { label: 'Proteína', link: '/produtos-proteina' },
     { label: 'Energia', link: '/produtos-energia' },
     { label: 'Acessórios', link: '/produtos-acessorios' },

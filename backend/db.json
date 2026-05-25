@@ -1,42 +1,24 @@
 {
   "pessoas": [
     {
-      "id": "uYW3eml_mZQ",
+      "id": "PSF5e6m4Lws",
       "nome": "amanda",
-      "sobrenome": "pedreira",
-      "dtNascimento": "2006-07-31"
-    },
-    {
-      "id": "02fMnyWMn0o",
-      "nome": "amanda",
-      "sobrenome": "pedreiraa",
       "dtNascimento": "2006-07-31",
       "cpf": "50601442830",
-      "cargo": "teste"
-    },
-    {
-      "id": "H4WmA57BvMQ",
-      "nome": "testando",
-      "sobrenome": "silva",
-      "dtNascimento": "2011-11-11",
-      "cargo": "Estágiaria",
-      "poder": "Poder 1"
-    },
-    {
-      "id": 1,
-      "nome": "Amanda",
-      "email": "amanda@gmail.com",
-      "senha": "123"
+      "cargo": "administrador",
+      "usuario": "amands",
+      "senha": "123",
+      "status": "Ativo"
     }
   ],
   "produtos": [
     {
       "id": "1",
-      "nome": "Whey protein Concentrado",
+      "nome": "Whey protein",
       "preco": "110.00",
       "categoria": "Proteína",
       "imagem": "https://images.pexels.com/photos/36429468/pexels-photo-36429468.png",
-      "estoque": 1,
+      "estoque": 3,
       "detalhes": "Suplemento indicado para auxiliar no ganho de massa muscular.",
       "destaque": "Sim",
       "status": "Ativo"
@@ -50,7 +32,7 @@
       "estoque": 15,
       "detalhes": "Proteina de Drápida absorção, ideal para quem busca alta concentração proteica.",
       "destaque": "Não",
-      "status": "Ativo"
+      "status": "Inativo"
     },
     {
       "id": "3",
@@ -58,9 +40,9 @@
       "preco": "89.90",
       "categoria": "Proteína",
       "imagem": "https://images.pexels.com/photos/17820729/pexels-photo-17820729.jpeg",
-      "estoque": 18,
+      "estoque": 0,
       "detalhes": "Fonte de proteína de absorção gradual, muito utilizada em dietas para hipertrofia.",
-      "destaque": "Não",
+      "destaque": "Sim",
       "status": "Ativo"
     },
     {
@@ -201,7 +183,7 @@
       "preco": "89.90",
       "categoria": "Equipamentos",
       "imagem": "https://images.pexels.com/photos/16679868/pexels-photo-16679868.jpeg",
-      "estoque": 16,
+      "estoque": 3,
       "detalhes": "Halter emborrachado indicado para treinos de força, exercícios funcionais e musculação.",
       "destaque": "Sim",
       "status": "Ativo"
@@ -239,10 +221,20 @@
     },
     {
       "nome": "amanda",
-      "email": "teste@gmail.com",
-      "assunto": "Sim",
-      "mensagem": "g",
-      "id": "NPNaDEWLQAU"
+      "email": "amandaluanap7@gmail.com",
+      "assunto": "Dúvida sobre produto",
+      "mensagem": "A",
+      "id": "AuRvZ2LnqdQ"
+    },
+    {
+      "id": "W8UQgT98rLE"
+    },
+    {
+      "nome": "q",
+      "email": "q",
+      "assunto": "Pedido atrasado",
+      "mensagem": "q",
+      "id": "rrPNqwSszQc"
     }
   ],
   "usuario": [
@@ -259,6 +251,20 @@
       "telefone": "11949074140",
       "senha": "123456",
       "id": "_0j_6kJLyuU"
+    },
+    {
+      "nome": "Amanda Luana Pedreira",
+      "email": "amandaluanap7@gmail.com",
+      "telefone": "11949074140",
+      "senha": "123321",
+      "id": "TRaGh-3R8VA"
+    },
+    {
+      "nome": "Amanda Luana Pedreira",
+      "email": "amandaluanap7@gmail.com",
+      "telefone": "11949074140",
+      "senha": "123",
+      "id": "eC5jGy2Mq1Y"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

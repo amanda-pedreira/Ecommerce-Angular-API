@@ -1,37 +1,87 @@
 <div class="content-container">
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Nome</th>
-<th>Preço</th>
-<th>Categoria</th>
-<th>Imagem</th>
-<th>Estoque</th>
-<th>Detalhes</th>
-<th>Destaque</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-@for (produtos of listaProdutos; track produtos){
-<tr>
-<td>{{produtos.id}}</td>
-<td>{{produtos.nome}}</td>
-<td>{{produtos.preco}}</td>
-<td>{{produtos.categoria}}</td>
-<td>{{produtos.imagem}}</td>
-<td>{{produtos.estoque}}</td>
-<td>{{produtos.detalhes}}</td>
-<td>{{produtos.destaque}}</td>
-<td>{{produtos.status}}</td>
-<td>
- <button class="btn-editar" [routerLink]="['/admin/produtos/alterar', produtos.id]">Editar</button>
- <button class="btn-excluir" (click)="excluir(produtos.id!)">Excluir</button>
-</td>
-</tr>
-}
-</tbody>
-</table>
-<button class="btn-incluir" routerLink="/admin/produtos/incluir">Incluir</button>
+
+    <h2>Lista de Produtos</h2>
+
+    <button
+        class="btn-incluir"
+        routerLink="/admin/produtos/incluir">
+
+        Incluir produto
+
+    </button>
+    <br><br>
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+                <th>Imagem</th>
+                <th>Estoque</th>
+                <th>Status</th>
+                <th>Ações</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @for (produtos of listaProdutos; track produtos){
+
+                <tr>
+
+                    <td>#{{produtos.id}}</td>
+
+                    <td>{{produtos.nome}}</td>
+
+                    <td>R$ {{produtos.preco}}</td>
+
+                    <td>{{produtos.categoria}}</td>
+
+                    <td>
+                        <img
+                            [src]="produtos.imagem"
+                            width="55"
+                            height="55"
+                            style="border-radius: 12px; object-fit: cover;">
+                    </td>
+
+                    <td>{{produtos.estoque}}</td>
+
+                    <td>{{produtos.status}}</td>
+
+                    <td>
+
+                        <button
+                            class="btn-editar"
+                            [routerLink]="['/admin/produtos/alterar', produtos.id]">
+
+                            Editar
+
+                        </button>
+
+                        <button
+                            class="btn-excluir"
+                            (click)="excluir(produtos.id!)">
+
+                            Excluir
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            }
+
+        </tbody>
+
+    </table>
+
+
 </div>

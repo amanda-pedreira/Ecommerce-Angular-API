@@ -58,10 +58,31 @@
 
              <label for="input-assunto">Assunto</label><br>
              <select class="input-simples" id="input-assunto" name="input-assunto" [(ngModel)]="contatos.assunto">
-                <option value="">Selecione</option>
-                <option value="Sim">Sim</option>
-                <option value="Não">Não</option>
-             </select>
+
+                  <option value="">Selecione</option>
+
+                  <option value="Dúvida sobre produto">
+                      Dúvida sobre produto
+                  </option>
+
+                  <option value="Pedido atrasado">
+                      Pedido atrasado
+                  </option>
+
+                  <option value="Troca ou devolução">
+                      Troca ou devolução
+                  </option>
+
+                  <option value="Problema no pagamento">
+                      Problema no pagamento
+                  </option>
+
+
+                  <option value="Outros">
+                      Outros
+                  </option>
+
+              </select>
 
             <label for="input-mensagem">Mensagem</label><br>
             <textarea class="input-mensagem" id="input-mensagem" name="input-mensagem" placeholder="Digite os detalhes do produto" rows="5" [(ngModel)]="contatos.mensagem"></textarea>

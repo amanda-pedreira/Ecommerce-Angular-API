@@ -53,9 +53,12 @@ export class CadastroUsuarioComponent {
     }else{
       this.service.incluir(this.usuario).subscribe(()=>{
         this.router.navigate(['listar'])
+        alert('Cadastro realizado com sucesso!');
+         this.router.navigate(['/login-usuario']);
       })
     }
   }
 
+  
 
 }

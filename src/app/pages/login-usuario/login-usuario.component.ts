@@ -36,7 +36,7 @@ export class LoginUsuarioComponent {
 
         alert('Login realizado')
 
-        this.router.navigate(['/admin'])
+        this.router.navigate(['/perfil-usuario'])
 
       }else{
 

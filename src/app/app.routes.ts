@@ -19,6 +19,9 @@ import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-prod
 import { ContatosListagemComponent } from './pages/contatos-listagem/contatos-listagem.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { LoginUsuarioComponent } from './pages/login-usuario/login-usuario.component';
+import { UsuarioListagemComponent } from './pages/usuario-listagem/usuario-listagem.component';
+import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfil-usuario.component';
+import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 
 
@@ -54,7 +57,8 @@ export const routes: Routes = [
             { path: 'produtos/incluir', component: ProdutosFormComponent },
             { path: 'produtos/listagem', component: ProdutosListagemComponent },
             { path: 'produtos/alterar/:id', component: ProdutosFormComponent },
-            { path: 'contatos/listagem', component: ContatosListagemComponent }
+            { path: 'contatos/listagem', component: ContatosListagemComponent },
+            { path: 'usuario/listagem', component: UsuarioListagemComponent },
         ]
     },
     {
@@ -106,6 +110,16 @@ export const routes: Routes = [
         path: 'login-usuario',
         component: LoginUsuarioComponent,
         title: 'Login',
+    },
+    {
+        path: 'perfil-usuario',
+        component: PerfilUsuarioComponent,
+        title: 'Perfil do usuário',
+    },
+    {
+        path: 'carrinho',
+        component: CarrinhoComponent,
+        title: 'Carrinho',
     },
     
 

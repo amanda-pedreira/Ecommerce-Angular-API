@@ -82,7 +82,7 @@
 
     display: inline-block;
 
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 
     width: fit-content;
 }
@@ -93,7 +93,7 @@
 
     font-size: 24px;
 
-    min-height: 65px;
+    min-height: 15px;
 
     max-height: 65px;
 
@@ -104,9 +104,9 @@
 
 .preco{
 
-    font-size: 32px;
+    font-size: 25px;
 
-    color: #7c3aed;
+    color: #0a0a0a;
 
     font-weight: bold;
 

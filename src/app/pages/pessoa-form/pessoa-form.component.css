@@ -1,63 +1,82 @@
-.content-container{
-    width: 500px;
+.content-container {
+    width: 85%;
+    max-width: 1000px;
     margin: 40px auto;
+    padding: 35px;
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.content-container h1{
-    text-align: center;
-    margin-bottom: 25px;
-    color: #333;
+.content-container h1 {
+    margin-bottom: 28px;
+    color: #111827;
+    font-size: 28px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-label{
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #444;
+.linha {
+    display: flex;
+    gap: 20px;
 }
 
-.input-simples{
+.campo {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
     font-size: 14px;
-    transition: 0.3s;
-    resize: none;
+    font-weight: bold;
+    color: #374151;
 }
 
-.input-simples:focus{
-    outline: none;
-    border-color: #f05a00;
-    box-shadow: 0 0 5px rgba(240,90,0,0.3);
-}
-
-textarea.input-simples{
-    min-height: 120px;
-}
-
-.input-submeter{
+.input-simples {
     width: 100%;
-    padding: 12px;
-    background-color: #f05a00;
-    color: white;
-    border: none;
-    border-radius: 6px;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    outline: none;
     font-size: 15px;
+    box-sizing: border-box;
+}
+
+.input-simples:focus {
+    border-color: #111827;
+    background-color: white;
+}
+
+.input-submeter {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    background-color: #8842d3;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.input-submeter:hover{
-    opacity: 0.9;
+.input-submeter:hover {
+    background-color: #7a51a5dd;
+}
+
+@media(max-width: 768px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    .content-container {
+        width: 92%;
+        padding: 24px;
+    }
 }

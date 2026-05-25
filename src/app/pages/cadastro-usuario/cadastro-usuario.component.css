@@ -213,3 +213,23 @@ form label{
 
     transform: translateY(-4px);
 }
+
+.extra-login{
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #6b7280;
+}
+
+.extra-login a{
+
+    color: #7c3aed;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+}

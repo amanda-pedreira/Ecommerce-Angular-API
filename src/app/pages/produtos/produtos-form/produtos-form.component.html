@@ -1,54 +1,75 @@
 <div class="content-container">
     <h1>{{ titulo }}</h1>
+
     <form>
 
-        <label for="input-id">ID</label><br>
-        <input class="input-simples" id="input-id" name="input-id" placeholder="Digite o id" type="text" [(ngModel)]="produtos.id"/>
+        <div class="linha">
+            <div class="campo">
+                <label for="input-nome">Nome do produto</label>
+                <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome do produto" type="text" [(ngModel)]="produtos.nome"/>
+            </div>
 
-        <label for="input-nome">Nome do produto</label><br>
-        <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome do produto" type="text" [(ngModel)]="produtos.nome"/>
+            <div class="campo">
+                <label for="input-preco">Preço</label>
+                <input class="input-simples" id="input-preco" name="input-preco" placeholder="Digite o preço" type="text" [(ngModel)]="produtos.preco"/>
+            </div>
+        </div>
 
-        <label for="input-preco">Preço</label><br>
-        <input class="input-simples" id="input-preco" name="input-preco" placeholder="Digite o preço" type="text" [(ngModel)]="produtos.preco"/>
+        <div class="linha">
+            <div class="campo">
+                <label for="input-categoria">Categoria</label>
+                <select class="input-simples" id="input-categoria" name="input-categoria" [(ngModel)]="produtos.categoria">
+                    <option value="">Selecione</option>
+                    <option value="Proteína">Proteína</option>
+                    <option value="Energia">Energia</option>
+                    <option value="Acessórios">Acessórios</option>
+                    <option value="Roupas">Roupas</option>
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Equipamentos">Equipamentos</option>
+                </select>
+            </div>
 
-        <label for="input-categoria">Categoria</label><br>
-        <select class="input-simples" id="input-categoria" name="input-categoria" [(ngModel)]="produtos.categoria">
-            <option value="">Selecione</option>
-            <option value="Proteína">Proteína</option>
-            <option value="Energia">Energia</option>
-            <option value="Acessórios">Acessórios</option>
-            <option value="Roupas">Roupas</option>
-            <option value="Alimentação">Alimentação</option>
-            <option value="Equipamentos">Equipamentos</option>
-        </select>
+            <div class="campo">
+                <label for="input-estoque">Estoque</label>
+                <input class="input-simples" id="input-estoque" name="input-estoque" placeholder="Quantidade" type="number" [(ngModel)]="produtos.estoque"/>
+            </div>
+        </div>
 
-        <label for="input-imagem">Imagem</label><br>
-        <input class="input-simples" id="input-imagem" name="input-imagem" placeholder="Cole o link da imagem" type="text" [(ngModel)]="produtos.imagem"/>
+        <div class="campo">
+            <label for="input-imagem">Imagem</label>
+            <input class="input-simples" id="input-imagem" name="input-imagem" placeholder="Cole o link da imagem" type="text" [(ngModel)]="produtos.imagem"/>
+        </div>
 
-        <label for="input-estoque">Estoque</label><br>
-        <input class="input-simples" id="input-estoque" name="input-estoque" placeholder="Digite a quantidade em estoque" type="number" [(ngModel)]="produtos.estoque"/>
+        <div class="linha">
+            <div class="campo">
+                <label for="input-destaque">Em destaque</label>
+                <select class="input-simples" id="input-destaque" name="input-destaque" [(ngModel)]="produtos.destaque">
+                    <option value="">Selecione</option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
 
-        <label for="input-detalhes">Detalhes do produto</label><br>
-        <textarea class="input-simples" id="input-detalhes" name="input-detalhes" placeholder="Digite os detalhes do produto" rows="5" [(ngModel)]="produtos.detalhes"></textarea>
+            <div class="campo">
+                <label for="input-status">Status</label>
+                <select class="input-simples" id="input-status" name="input-status" [(ngModel)]="produtos.status">
+                    <option value="">Selecione</option>
+                    <option value="Ativo">Ativo</option>
+                    <option value="Inativo">Inativo</option>
+                </select>
+            </div>
+        </div>
 
-        <label for="input-destaque">Em destaque</label><br>
-        <select class="input-simples" id="input-destaque" name="input-destaque" [(ngModel)]="produtos.destaque">
-            <option value="">Selecione</option>
-            <option value="Sim">Sim</option>
-            <option value="Não">Não</option>
-        </select>
+        <div class="campo">
+            <label for="input-detalhes">Detalhes do produto</label>
+            <textarea class="input-simples" id="input-detalhes" name="input-detalhes" placeholder="Digite os detalhes do produto" rows="5" [(ngModel)]="produtos.detalhes"></textarea>
+        </div>
 
-        <label for="input-status">Status</label><br>
-        <select class="input-simples" id="input-status" name="input-status" [(ngModel)]="produtos.status">
-            <option value="">Selecione</option>
-            <option value="Ativo">Ativo</option>
-            <option value="Inativo">Inativo</option>
-        </select>
-
-
-        <button class="input-submeter" (click)="submeter()">
+        <button class="input-submeter" type="button" (click)="submeter()">
             Cadastrar Produto
         </button>
 
     </form>
+    
 </div>
+

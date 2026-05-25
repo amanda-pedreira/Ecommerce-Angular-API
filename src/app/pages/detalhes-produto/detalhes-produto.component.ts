@@ -68,4 +68,18 @@ export class DetalhesProdutoComponent {
 
 
 
+  adicionarCarrinho(){
+
+    let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
+
+    carrinho.push(this.produto);
+
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    alert('Produto adicionado ao carrinho');
+
+}
+
+
+
 }

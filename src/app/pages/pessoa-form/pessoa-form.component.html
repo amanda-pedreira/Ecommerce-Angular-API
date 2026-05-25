@@ -1,28 +1,77 @@
 <div class="content-container">
-    <h1>{{ titulo }}</h1>
-    <form>
-        <label for="input-id">ID</label><br>
-        <input class="input-simples" id="input-id" name="input-id" placeholder="Digite o id" type="text" [(ngModel)]="pessoa.id" />
-       
-        <label for="input-nome">Nome</label><br>
-        <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o primeiro nome" type="text" [(ngModel)]="pessoa.nome"/>
-       
-        <label for="input-sobrenome">Sobrenome</label><br>
-        <input class="input-simples" id="input-sobrenome" name="input-sobrenome" placeholder="Digite o sobrenome" type="text" [(ngModel)]="pessoa.sobrenome"/>
-       
-        <label for="input-nascimento">Escolha a data de nascimento</label><br>
-        <input class="input-simples" id="input-nascimento" name="input-nascimento" type="date" [(ngModel)]="pessoa.dtNascimento"/>
-       
-        <label for="input-cpf">CPF</label><br>
-        <input class="input-simples" id="input-cpf" name="input-cpf" type="test" [(ngModel)]="pessoa.cpf"/>
-       
-        <label for="input-cargo">Cargo</label><br>
-        <input class="input-simples" id="input-cargo" name="input-nascimento" type="test" [(ngModel)]="pessoa.cargo"/>
-       
 
-        
-        <button class="input-submeter" (click)="submeter()" >
+    <h1>{{ titulo }}</h1>
+
+    <form>
+
+        <div class="linha">
+
+            <div class="campo">
+                <label for="input-nome">Nome</label>
+                <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o primeiro nome" type="text" [(ngModel)]="pessoa.nome"/>
+            </div>
+
+          
+           
+
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="input-nascimento">Data de nascimento</label>
+                <input class="input-simples" id="input-nascimento" name="input-nascimento" type="date" [(ngModel)]="pessoa.dtNascimento"/>
+            </div>
+
+            <div class="campo">
+                <label for="input-cpf">CPF</label>
+                <input class="input-simples" id="input-cpf" name="input-cpf" placeholder="Digite o CPF" type="text" [(ngModel)]="pessoa.cpf"/>
+            </div>
+
+      
+
+        </div>
+
+
+
+        <div class="linha">
+
+            <div class="campo">
+                <label for="input-usuario">Usuário</label>
+                <input class="input-simples" id="input-usuario" name="input-usuario" placeholder="Digite o usuário" type="text" [(ngModel)]="pessoa.usuario"/>
+            </div>
+
+            <div class="campo">
+                <label for="input-senha">Senha</label>
+                <input class="input-simples" id="input-senha" name="input-senha" placeholder="Digite a senha" type="password" [(ngModel)]="pessoa.senha"/>
+            </div>
+
+        </div>
+
+
+                <div class="linha">
+
+      
+      <div class="campo">
+                <label for="input-cargo">Cargo</label>
+                <input class="input-simples" id="input-cargo" name="input-cargo" placeholder="Digite o cargo" type="text" [(ngModel)]="pessoa.cargo"/>
+            </div>
+   
+
+            <div class="campo">
+                <label for="input-status">Status</label>
+                <select class="input-simples" id="input-status" name="input-status" [(ngModel)]="pessoa.status">
+                    <option value="">Selecione</option>
+                    <option value="Ativo">Ativo</option>
+                    <option value="Inativo">Inativo</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button class="input-submeter" type="button" (click)="submeter()">
             Cadastrar
         </button>
+
     </form>
+
 </div>

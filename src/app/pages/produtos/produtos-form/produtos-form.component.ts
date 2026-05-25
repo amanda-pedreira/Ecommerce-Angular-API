@@ -51,10 +51,12 @@
         })
       }else{
         this.service.incluir(this.produtos).subscribe(()=>{
+          alert('Produto cadastrado com sucesso!');
           this.router.navigate(['listar'])
         })
       }
     }
+
 
 
   }

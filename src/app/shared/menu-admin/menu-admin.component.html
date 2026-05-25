@@ -1,23 +1,68 @@
-<div class="menu-admin">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <div class="logo-admin">
+<div class="menu-admin" id="menuAdmin">
 
-        <div>
-            <h2>POWER SUPLEMENTOS</h2>
-            <p>Administradores</p>
-        </div>
+    <!-- SETA -->
+
+    <div class="seta-menu">
+        <button (click)="fecharMenu()" id="fechar" style="background: transparent; border: none; color: blueviolet;">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button (click)="abrirMenu()" id="abrir" style="display: none; background: transparent; border: none; color: blueviolet;">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
     </div>
 
-    <ul class="navbar-list">
+    <!-- LOGO -->
+
+    <div class="logo-admin" id="controlarLogo" style="display: block;">
+
+        <div class="logo-texto">
+
+            <h2>
+                POWER
+            </h2>
+
+            <span>
+                SUPLEMENTOS
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- MENU -->
+
+    <ul class="navbar-list" id="controlarLista" style="display: block;">
+
         @for (item of itensMenu; track item) {
-            <li class="navbar-item" routerLink="{{item.link}}">
-                <a>{{ item.label }}</a>
+
+            <li class="navbar-item">
+
+                <a routerLink="{{item.link}}">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    {{ item.label }}
+
+                </a>
+
             </li>
+
         }
+
     </ul>
 
-    <div class="logout-admin" routerLink="/">
-        <img src="assets/icons/logout.png" alt="sair">
+    <!-- VOLTAR -->
+
+    <div class="footer-admin" id="controlarFooter" style="display: block;">
+
+        <a routerLink="/">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
     </div>
 
 </div>

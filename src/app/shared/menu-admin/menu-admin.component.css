@@ -1,64 +1,191 @@
-.menu-admin{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000000;
-    padding: 18px 35px;
-    border-bottom: 1px solid #ddd;
+body{
+
+    background-color: #f5f7fb;
 }
+
+/* MENU */
+
+.menu-admin{
+
+    width: 250px;
+
+    height: 100vh;
+
+    background-color: white;
+
+    border-right: 1px solid #ececec;
+
+    position: fixed;
+
+    left: 0;
+
+    top: 0;
+
+    padding: 35px 22px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+
+
+/* LOGO */
 
 .logo-admin{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+
+    margin-bottom: 40px;
 }
 
-.logo-admin img{
-    width: 42px;
-}
+.logo-texto h2{
 
-.logo-admin h2{
     margin: 0;
-    font-size: 20px;
-    color: #ffffff;
+
+    font-size: 30px;
+
+    letter-spacing: 4px;
+
+    color: #111827;
+}
+
+.logo-texto span{
+
+    color: #7c3aed;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
-.logo-admin p{
-    margin: 0;
-    font-size: 13px;
-    color: #dedede;
-}
+/* MENU */
 
 .navbar-list{
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.navbar-item{
-    cursor: pointer;
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
 }
 
 .navbar-item a{
+
+    height: 52px;
+
+    padding: 0 18px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
     text-decoration: none;
-    color: #dedede;
-    font-size: 14px;
-    font-weight: normal;
+
+    color: #4b5563;
+
+    font-weight: 600;
+
+    transition: 0.3s;
 }
+
+.navbar-item i{
+
+    font-size: 7px;
+
+    color: #7c3aed;
+}
+
+/* HOVER */
 
 .navbar-item a:hover{
-    color: #f05a00;
+
+    background-color: #f3f0ff;
+
+    color: #7c3aed;
 }
 
-.logout-admin img{
-    width: 28px;
+/* FOOTER */
+
+.footer-admin{
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.footer-admin a{
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 14px;
+
+    background-color: #f3f4f6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #111827;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.footer-admin a:hover{
+
+    background-color: #7c3aed;
+
+    color: white;
+}
+
+/* SETA */
+
+.seta-menu{
+
+    position: absolute;
+
+    top: 45px;
+
+    right: -16px;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    border: 1px solid #ececec;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #7c3aed;
+
     cursor: pointer;
-}
 
-.logout-admin img:hover{
-    opacity: 0.7;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }

@@ -1,12 +1,12 @@
 export interface Pessoa{
     id?: number;
     nome: string,
-    sobrenome: string,
     dtNascimento: string,
     cpf: string,
     cargo: string,
-    email: string, 
-    senha: string
+    usuario: string, 
+    senha: string,
+    status: string
 }
 
 
