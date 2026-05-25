@@ -42,12 +42,26 @@
   padding: 70px 0;
 }
 
+.produtos> div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 330px));
+  justify-content: center;
+  gap: 24;
+}
+
 .produtos h2 {
   text-align: center;
   letter-spacing: 7px;
   font-size: 34px;
   margin-bottom: 45px;
   color: #111;
+}
+
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 330px));
+  justify-content: center;
+  gap: 24px;
 }
 
 .card-produto {

@@ -24,5 +24,8 @@ export class HeaderComponent {
     { label: 'Proteína', link: '/produtos-proteina' },
     { label: 'Energia', link: '/produtos-energia' },
     { label: 'Acessórios', link: '/produtos-acessorios' },
+    { label: 'Roupas', link: '/produtos-roupas' },
+    { label: 'Alimentação', link: '/produtos-alimentacao' },
+    { label: 'Equipamentos', link: '/produtos-equipamentos' },
   ]
 }

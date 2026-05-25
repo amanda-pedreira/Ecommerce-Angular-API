@@ -12,10 +12,14 @@ import { ProdutosComponent } from './pages/produtos-pagina/produtos/produtos.com
 import { ProdutosProteinaComponent } from './pages/produtos-pagina/produtos-proteina/produtos-proteina.component';
 import { ProdutosEnergiaComponent } from './pages/produtos-pagina/produtos-energia/produtos-energia.component';
 import { ProdutosAcessoriosComponent } from './pages/produtos-pagina/produtos-acessorios/produtos-acessorios.component';
+import { ProdutosRoupasComponent } from './pages/produtos-pagina/produtos-roupas/produtos-roupas.component';
+import { ProdutosAlimentacaoComponent } from './pages/produtos-pagina/produtos-alimentacao/produtos-alimentacao.component';
+import { ProdutosEquipamentosComponent } from './pages/produtos-pagina/produtos-equipamentos/produtos-equipamentos.component';
 import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
 import { ContatosListagemComponent } from './pages/contatos-listagem/contatos-listagem.component';
 import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
 import { LoginUsuarioComponent } from './pages/login-usuario/login-usuario.component';
+
 
 
 export const routes: Routes = [
@@ -72,6 +76,21 @@ export const routes: Routes = [
         path: 'produtos-acessorios',
         component: ProdutosAcessoriosComponent,
         title: 'Acessórios',
+    },
+    {
+    path: 'produtos-roupas',
+    component: ProdutosRoupasComponent,
+    title: 'Roupas',
+    },
+{
+    path: 'produtos-alimentacao',
+    component: ProdutosAlimentacaoComponent,
+    title: 'Alimentação',
+    },
+{
+    path: 'produtos-equipamentos',
+    component: ProdutosEquipamentosComponent,
+    title: 'Equipamentos',
     },
     {
         path: 'detalhes-produto/:id',

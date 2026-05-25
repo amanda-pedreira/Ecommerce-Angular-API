@@ -1,0 +1,24 @@
+  <div class="card-wrapper">
+
+        @for(produto of listaProdutos; track produto){
+
+    @if(produto.status !== 'Inativo' && produto.categoria == 'Roupas'){
+            <app-card
+                [id]="produto.id"
+                [imageUrl]="produto.imagem"
+                [nome]="produto.nome"
+                [preco]="produto.preco"
+                [categoria]="produto.categoria"
+                [estoque]="produto.estoque"
+                [detalhes]="produto.detalhes"
+                [destaque]="produto.destaque"
+                [status]="produto.status">
+            </app-card>
+
+        }
+    }
+
+
+
+
+  </div>

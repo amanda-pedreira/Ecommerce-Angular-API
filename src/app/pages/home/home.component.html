@@ -1,34 +1,21 @@
-<div class="home">
+<section class="produtos">
+  <h2>PRODUTOS EM DESTAQUE</h2>
 
-  <section class="banner">
-    <div class="banner-texto">
-      <h1>POWER SUPLEMENTOS</h1>
-      <p>Energia, foco e performance para sua rotina.</p>
-      <button>VER PRODUTOS</button>
-    </div>
-  </section>
-
-  <div class="card-wrapper">
-
-        @for(produto of listaProdutos; track produto){
-
-    @if(produto.status !== 'Inativo' && produto.destaque == 'Sim'){
-            <app-card
-                [id]="produto.id"
-                [imageUrl]="produto.imagem"
-                [nome]="produto.nome"
-                [preco]="produto.preco"
-                [categoria]="produto.categoria"
-                [estoque]="produto.estoque"
-                [status]="produto.status">
-            </app-card>
-
-        }
+  <div class="lista-produtos">
+    @for(produto of listaProdutos; track produto) {
+      @if(produto.status !== 'Inativo' && produto.destaque == 'Sim') {
+        <app-card
+          [id]="produto.id"
+          [imageUrl]="produto.imagem"
+          [nome]="produto.nome"
+          [categoria]="produto.categoria"
+          [preco]="produto.preco"
+          [estoque]="produto.estoque"
+          [detalhes]="produto.detalhes"
+          [destaque]="produto.destaque"
+          [status]="produto.status">
+        </app-card>
+      }
     }
-
-
-
-
   </div>
-
-</div>
+</section>

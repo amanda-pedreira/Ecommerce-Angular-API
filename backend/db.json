@@ -23,37 +23,228 @@
       "poder": "Poder 1"
     }
   ],
+
+
   "produtos": [
     {
-      "id": "fsgEa6PVOvc",
-      "nome": "Suplementoo",
-      "preco": "80",
+      "id": 1,
+      "nome": "Whey protein Concentrado",
+      "preco": "110.00",
       "categoria": "Proteína",
-      "imagem": "https://images.pexels.com/photos/17820715/pexels-photo-17820715.jpeg",
-      "estoque": 10,
-      "status": "Ativo"
-    },
-    {
-      "id": "nnrH6yxLcHE",
-      "nome": "sup",
-      "preco": "10",
-      "categoria": "Energia",
-      "imagem": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
-      "estoque": 1,
-      "status": "Ativo"
-    },
-    {
-      "id": "p65uGaMp68I",
-      "nome": "33",
-      "preco": "0",
-      "categoria": "Proteína",
-      "imagem": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
-      "estoque": -1,
-      "detalhes": "https://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeghttps://images.pexels.com/photos/13779115/pexels-photo-13779115.jpeg",
+      "imagem": "https://images.pexels.com/photos/36429468/pexels-photo-36429468.png",
+      "estoque": 20,
+      "detalhes": "Suplemento indicado para auxiliar no ganho de massa muscular.",
       "destaque": "Sim",
       "status": "Ativo"
-    }
-  ],
+    },
+    
+    {
+      "id": 2,
+      "nome": "Whey protein Isolado",
+      "preco":"139.90",
+      "categoria": "Proteína",
+      "imagem": "https://images.pexels.com/photos/31555272/pexels-photo-31555272.jpeg",
+      "estoque": 15,
+      "detalhes": "Proteina de Drápida absorção, ideal para quem busca alta concentração proteica.",
+      "destaque": "Não",
+      "status": "Ativo"
+    },
+
+    {
+      "id": 3,
+      "nome": "Albumina",
+      "preco": "89.90",
+      "categoria": "Proteína",
+      "imagem": "https://images.pexels.com/photos/17820729/pexels-photo-17820729.jpeg",
+      "estoque": 18,
+      "detalhes": "Fonte de proteína de absorção gradual, muito utilizada em dietas para hipertrofia.",
+      "destaque": "Não",
+      "status": "Ativo"
+    },
+
+    {
+    "id": "4",
+    "nome": "Bebida Energética",
+    "preco": "8.90",
+    "categoria": "Energia",
+    "imagem": "https://images.pexels.com/photos/4386027/pexels-photo-4386027.jpeg",
+    "estoque": 40,
+    "detalhes": "Bebida energética para auxiliar na disposição antes dos treinos ou atividades do dia.",
+    "destaque": "Sim",
+    "status": "Ativo"
+  },
+
+  {
+    "id": "5",
+    "nome": "Cafeína em Cápsulas",
+    "preco": "39.90",
+    "categoria": "Energia",
+    "imagem": "https://images.pexels.com/photos/4046999/pexels-photo-4046999.jpeg",
+    "estoque": 25,
+    "detalhes": "Suplemento à base de cafeína, indicado para foco, energia e desempenho nos treinos.",
+    "destaque": "Não",
+    "status": "Ativo"
+  },
+
+  {
+    "id": "6",
+    "nome": "Gomas de Energia",
+    "preco": "90.00",
+    "categoria": "Energia",
+    "imagem": "https://images.pexels.com/photos/7883496/pexels-photo-7883496.jpeg",
+    "estoque": 30,
+    "detalhes": "Fonte rápida de energia para treinos longos, corridas e atividades de resistência.",
+    "destaque": "Não",
+    "status": "Ativo"
+  },
+  {
+    "id": "7",
+    "nome": "Coqueteleira 700ml",
+    "preco": "24.90",
+    "categoria": "Acessórios",
+    "imagem": "https://images.pexels.com/photos/11463524/pexels-photo-11463524.png",
+    "estoque": 35,
+    "detalhes": "Coqueteleira do Homem de Ferro para preparar whey, hipercalóricos, pré-treinos e shakes.",
+    "destaque": "Sim",
+    "status": "Ativo"
+  },
+
+  {
+    "id": "8",
+    "nome": "Munhequeira de Treino",
+    "preco": "34.90",
+    "categoria": "Acessórios",
+    "imagem": "https://images.pexels.com/photos/15046632/pexels-photo-15046632.jpeg",
+    "estoque": 22,
+    "detalhes": "Acessório para dar mais estabilidade aos punhos durante exercícios de força.",
+    "destaque": "Não",
+    "status": "Ativo"
+  },
+
+  {
+    "id": "9",
+    "nome": "Cinturão treino",
+    "preco": "200.99",
+    "categoria": "Acessórios",
+    "imagem": "https://images.pexels.com/photos/5327461/pexels-photo-5327461.jpeg",
+    "estoque": 19,
+    "detalhes": "serve para aumentar a pressão intra-abdominal e estabilizar o tronco.",
+    "destaque": "Não",
+    "status": "Ativo"
+
+  },
+
+  {
+    "id": "10",
+    "nome": "Camiseta Oversized",
+    "preco": "75.90",
+    "categoria": "Roupas",
+    "imagem": "https://images.pexels.com/photos/37247738/pexels-photo-37247738.jpeg",
+    "estoque": 19,
+    "detalhes": "Camiseta Oversized para que você possa trienar na moda e com estilo.",
+    "destaque": "Não",
+    "status": "Ativo"
+  },
+
+  {
+  "id": "11",
+  "nome": "Regata Dry Fit",
+  "preco": "49.90",
+  "categoria": "Roupas",
+  "imagem": "https://images.pexels.com/photos/36541486/pexels-photo-36541486.jpeg",
+  "estoque": 25,
+  "detalhes": "Regata leve e respirável, indicada para treinos de musculação, corrida e atividades físicas.",
+  "destaque": "Sim",
+  "status": "Ativo"
+},
+
+{
+  "id": "12",
+  "nome": "Shorts Esportivo",
+  "preco": "59.90",
+  "categoria": "Roupas",
+  "imagem": "https://images.pexels.com/photos/33417687/pexels-photo-33417687.jpeg",
+  "estoque": 22,
+  "detalhes": "Shorts esportivo com tecido confortável, ideal para treinos intensos e prática de exercícios.",
+  "destaque": "Não",
+  "status": "Ativo"
+},
+
+{
+  "id": "13",
+  "nome": "Pasta de Amendoim",
+  "preco": "29.90",
+  "categoria": "Alimentação",
+  "imagem": "https://images.pexels.com/photos/5149346/pexels-photo-5149346.jpeg",
+  "estoque": 30,
+  "detalhes": "Pasta de amendoim cremosa, fonte de gorduras boas e energia para complementar a dieta.",
+  "destaque": "Sim",
+  "status": "Ativo"
+},
+
+{
+  "id": "14",
+  "nome": "Barra de Proteína",
+  "preco": "9.90",
+  "categoria": "Alimentação",
+  "imagem": "https://images.pexels.com/photos/13111782/pexels-photo-13111782.jpeg",
+  "estoque": 45,
+  "detalhes": "Barra proteica prática para consumir no dia a dia, antes ou depois dos treinos.",
+  "destaque": "Não",
+  "status": "Ativo"
+},
+
+{
+  "id": "15",
+  "nome": "Aveia em Flocos",
+  "preco": "14.90",
+  "categoria": "Alimentação",
+  "imagem": "https://images.pexels.com/photos/8108077/pexels-photo-8108077.jpeg",
+  "estoque": 35,
+  "detalhes": "Aveia em flocos, opção nutritiva para receitas, vitaminas, mingaus e refeições saudáveis.",
+  "destaque": "Não",
+  "status": "Ativo"
+},
+
+{
+  "id": "16",
+  "nome": "Halter Emborrachado",
+  "preco": "89.90",
+  "categoria": "Equipamentos",
+  "imagem": "https://images.pexels.com/photos/16679868/pexels-photo-16679868.jpeg",
+  "estoque": 16,
+  "detalhes": "Halter emborrachado indicado para treinos de força, exercícios funcionais e musculação.",
+  "destaque": "Sim",
+  "status": "Ativo"
+},
+
+{
+  "id": "17",
+  "nome": "Colchonete de Treino",
+  "preco": "69.90",
+  "categoria": "Equipamentos",
+  "imagem": "https://images.pexels.com/photos/6740736/pexels-photo-6740736.jpeg",
+  "estoque": 20,
+  "detalhes": "Colchonete confortável para alongamentos, abdominais, yoga e exercícios no solo.",
+  "destaque": "Não",
+  "status": "Ativo"
+},
+
+{
+  "id": "18",
+  "nome": "Corda de treino",
+  "preco": "34.90",
+  "categoria": "Equipamentos",
+  "imagem": "https://images.pexels.com/photos/8032916/pexels-photo-8032916.jpeg",
+  "estoque": 28,
+  "detalhes": "Corda de pular leve e prática, ideal para treinos cardiovasculares e aquecimento.",
+  "destaque": "Não",
+  "status": "Ativo"
+}
+
+],
+
+
   "contatos": [
     {
       "nome": "qqqqqqqq",
