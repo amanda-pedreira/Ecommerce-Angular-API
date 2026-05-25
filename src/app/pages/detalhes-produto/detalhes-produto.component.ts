@@ -48,5 +48,24 @@ export class DetalhesProdutoComponent {
   }
 
 
+  cep: string = '';
+
+  valorFrete: string = '';
+
+  calcularFrete(){
+
+    if(this.cep.trim() == ''){
+
+      alert('Digite um CEP');
+
+      return;
+    }
+
+    const frete = Math.floor(Math.random() * 30) + 10;
+
+    this.valorFrete = frete.toString();
+  }
+
+
 
 }

@@ -1,21 +1,127 @@
-<section class="produtos">
-  <h2>PRODUTOS EM DESTAQUE</h2>
+<div class="home">
 
-  <div class="lista-produtos">
-    @for(produto of listaProdutos; track produto) {
-      @if(produto.status !== 'Inativo' && produto.destaque == 'Sim') {
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-esquerda">
+
+      <span class="tag-topo">
+        PERFORMANCE • ENERGIA • EVOLUÇÃO
+      </span>
+
+      <h1>
+        O suplemento certo muda o seu treino.
+      </h1>
+
+      <p>
+        Produtos selecionados para quem busca força,
+        foco e resultados reais.
+      </p>
+
+      <div class="hero-botoes">
+        <button routerLink="/produtos">
+          EXPLORAR PRODUTOS
+        </button>
+
+        <a routerLink="/sobre">
+          Conhecer a marca
+        </a>
+      </div>
+
+      <div class="hero-numeros">
+
+        <div class="numero-box">
+          <h2>+12k</h2>
+          <span>clientes</span>
+        </div>
+
+        <div class="numero-box">
+          <h2>98%</h2>
+          <span>aprovação</span>
+        </div>
+
+        <div class="numero-box">
+          <h2>24h</h2>
+          <span>envio rápido</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-direita">
+
+      <div class="blur blur-1"></div>
+      <div class="blur blur-2"></div>
+
+
+
+
+    </div>
+
+  </section>
+
+  <!-- BENEFICIOS -->
+
+  <section class="beneficios">
+
+    <div class="beneficio-card">
+      <h3>Entrega rápida</h3>
+      <p>Receba seus produtos com segurança.</p>
+    </div>
+
+    <div class="beneficio-card">
+      <h3>Produtos premium</h3>
+      <p>As melhores marcas do mercado fitness.</p>
+    </div>
+
+    <div class="beneficio-card">
+      <h3>Compra simples</h3>
+      <p>Experiência rápida e moderna.</p>
+    </div>
+
+  </section>
+
+  <!-- TITULO -->
+
+  <section class="titulo-produtos">
+
+    <span>POWER STORE</span>
+
+    <h2>
+      Produtos em destaque
+    </h2>
+
+    <p>
+      Selecionados para performance máxima.
+    </p>
+
+  </section>
+
+  <!-- PRODUTOS -->
+
+  <div class="card-wrapper">
+
+    @for(produto of listaProdutos; track produto){
+
+      @if(produto.status !== 'Inativo' && produto.destaque == 'Sim'){
+
         <app-card
           [id]="produto.id"
           [imageUrl]="produto.imagem"
           [nome]="produto.nome"
-          [categoria]="produto.categoria"
           [preco]="produto.preco"
+          [categoria]="produto.categoria"
           [estoque]="produto.estoque"
-          [detalhes]="produto.detalhes"
-          [destaque]="produto.destaque"
-          [status]="produto.status">
+          [status]="produto.status"
+          [detalhes]="produto.detalhes">
         </app-card>
+
       }
+
     }
+
   </div>
-</section>
+
+</div>

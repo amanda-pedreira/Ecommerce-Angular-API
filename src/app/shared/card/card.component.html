@@ -1,59 +1,69 @@
+@if(estoque <= 0){
 
-    @if(estoque <= 0){
-        <mat-card class="example-card card-esgotado"  appearance="outlined">
+<mat-card class="example-card card-esgotado" appearance="outlined">
 
-    <div class="faixa-esgotado">ESGOTADO</div>
-  
+    <div class="faixa-esgotado">
+        ESGOTADO
+    </div>
 
-  <img mat-card-image [src]="imageUrl" alt="descrição da foto">
+    <img mat-card-image [src]="imageUrl" alt="descrição da foto">
 
-  <mat-card-content>
+    <mat-card-content>
 
-    <h2>{{ nome }}</h2>
+        <span class="categoria">
+            {{ categoria }}
+        </span>
 
-    <p>Categoria: {{ categoria }}</p>
-    <p>Preço: {{ preco }}</p>
-    <p>Estoque: {{ estoque }}</p>
-    <p>Detalhes: {{ detalhes }}</p>
-    <p>Destaque: {{ destaque }}</p>
-    <p>Status: {{ status }}</p>
+        <h2>
+            {{ nome }}
+        </h2>
 
-  </mat-card-content>
+        <h3 class="preco">
+            {{ preco }}
+        </h3>
 
-  <mat-card-actions>
-    <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
-      COMPRAR
-    </button>
-  </mat-card-actions>
+    </mat-card-content>
 
-</mat-card>
-    }@else{
-         <mat-card class="example-card" appearance="outlined">
+    <mat-card-actions>
 
+        <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
+            COMPRAR
+        </button>
 
-
-  <img mat-card-image [src]="imageUrl" alt="descrição da foto">
-
-  <mat-card-content>
-
-    <h2>{{ nome }}</h2>
-
-    <p>Categoria: {{ categoria }}</p>
-    <p>Preço: {{ preco }}</p>
-    <p>Estoque: {{ estoque }}</p>
-    <p>Detalhes: {{ detalhes }}</p>
-    <p>Destaque: {{ destaque }}</p>
-    <p>Status: {{ status }}</p>
-
-  </mat-card-content>
-
-  <mat-card-actions>
-    <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
-      COMPRAR
-    </button>
-  </mat-card-actions>
+    </mat-card-actions>
 
 </mat-card>
 
-    }
+}@else{
 
+<mat-card class="example-card" appearance="outlined">
+
+    <img mat-card-image [src]="imageUrl" alt="descrição da foto">
+
+    <mat-card-content>
+
+        <span class="categoria">
+            {{ categoria }}
+        </span>
+
+        <h2>
+            {{ nome }}
+        </h2>
+
+        <h3 class="preco">
+            {{ preco }}
+        </h3>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+
+        <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
+            COMPRAR
+        </button>
+
+    </mat-card-actions>
+
+</mat-card>
+
+}

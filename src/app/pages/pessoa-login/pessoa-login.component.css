@@ -2,7 +2,8 @@
     max-width: 400px;
     margin: 50px auto;
     padding: 30px;
-    border: 1px solid #ccc;
+    height: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     border-radius: 5px;
     background-color: white;
 }
@@ -24,7 +25,7 @@
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #ff6600;
+    background-color: #442a6c;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -32,5 +33,5 @@
 }
 
 .container-login button:hover{
-    background-color: #e65c00;
+    background-color: #442a6c;
 }

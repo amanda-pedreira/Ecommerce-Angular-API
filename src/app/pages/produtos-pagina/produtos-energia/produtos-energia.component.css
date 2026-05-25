@@ -1,0 +1,75 @@
+body{
+    background-color: #f6f3ff;
+}
+
+/* PÁGINA */
+
+.pagina-produtos{
+
+    width: 92%;
+
+    margin: auto;
+
+    padding-top: 60px;
+
+    padding-bottom: 80px;
+}
+
+/* TOPO */
+
+.topo-produtos{
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.topo-produtos span{
+
+    background-color: #ede9fe;
+
+    color: #7c3aed;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.topo-produtos h1{
+
+    font-size: 56px;
+
+    margin-top: 28px;
+
+    margin-bottom: 12px;
+
+    color: #111827;
+
+    font-weight: 700;
+}
+
+.topo-produtos p{
+
+    color: #6b7280;
+
+    font-size: 17px;
+}
+
+/* CARDS */
+
+.card-wrapper{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+}

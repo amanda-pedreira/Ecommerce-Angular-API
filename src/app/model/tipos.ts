@@ -5,6 +5,8 @@ export interface Pessoa{
     dtNascimento: string,
     cpf: string,
     cargo: string,
+    email: string, 
+    senha: string
 }
 
 

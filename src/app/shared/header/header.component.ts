@@ -10,14 +10,16 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
   exibirLogo:boolean = true;
+
+  itemLogin = [
+    { label: 'Login', link: '/login-usuario' },
+  ]
+
   itensMenu = [
-    { label: 'Home', link: '/' },
-    { label: 'Login', link: '/login' },
+    { label: 'Início', link: '/' },
     { label: 'Produtos', link: '/produtos' },
     { label: 'Sobre', link: '/sobre' },
     { label: 'Contatos', link: '/contatos' },
-    { label: 'Cadastro', link: '/cadastro-usuario' },
-    { label: 'Login', link: '/login-usuario' },
   ]
 
   itensSubmenu = [

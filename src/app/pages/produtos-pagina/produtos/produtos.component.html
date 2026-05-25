@@ -1,24 +1,51 @@
-  <div class="card-wrapper">
+<div class="pagina-produtos">
+
+    <div class="topo-produtos">
+
+        <span>
+            POWER STORE
+        </span>
+
+        <h1>
+            Todos os produtos
+        </h1>
+        <br>
+        <p>
+            Explore nossas linhas completas.
+        </p>
+
+    </div>
+
+    <div class="card-wrapper">
 
         @for(produto of listaProdutos; track produto){
 
-    @if(produto.status !== 'Inativo'){
-            <app-card
-                [id]="produto.id"
-                [imageUrl]="produto.imagem"
-                [nome]="produto.nome"
-                [preco]="produto.preco"
-                [categoria]="produto.categoria"
-                [estoque]="produto.estoque"
-                [detalhes]="produto.detalhes"
-                [destaque]="produto.destaque"
-                [status]="produto.status">
-            </app-card>
+            @if(produto.status !== 'Inativo'){
+
+                <app-card
+
+                    [id]="produto.id"
+
+                    [imageUrl]="produto.imagem"
+
+                    [nome]="produto.nome"
+
+                    [preco]="produto.preco"
+
+                    [categoria]="produto.categoria"
+
+                    [estoque]="produto.estoque"
+
+                    [status]="produto.status"
+
+                    [detalhes]="produto.detalhes">
+
+                </app-card>
+
+            }
 
         }
-    }
 
+    </div>
 
-
-
-  </div>
+</div>

@@ -10,7 +10,7 @@
 
 .subtitulo {
   font-weight: bold;
-  color: #f05a00;
+  color: #442a6c;
   margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@
 .mensagem h2 {
   font-size: 42px;
   font-weight: 300;
-  border-left: 4px solid #f05a00;
+  border-left: 4px solid #442a6c;
   padding-left: 18px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .caixa-mensagem {
-  background-color: #f05a00;
+  background-color: #442a6c;
   color: white;
   padding: 55px;
   border-radius: 4px;

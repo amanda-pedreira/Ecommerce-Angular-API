@@ -1,83 +1,220 @@
 .example-card{
-    width: 100%;
-    max-width: 330px;
-    margin: 0 auto 30px auto;
-    border-radius: 15px;
+
+    width: 320px !important;
+
+    height: 500px !important;
+
+    min-width: 320px;
+
+    max-width: 320px;
+
+    min-height: 500px;
+
+    max-height: 500px;
+
+    border-radius: 28px;
+
     overflow: hidden;
+
+    background-color: white;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
-    border: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
 }
+
+.example-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+}
+
+/* IMAGEM */
 
 .example-card img{
+
     width: 100%;
-    height: 230px;
+
+    height: 240px !important;
+
+    min-height: 240px;
+
+    max-height: 240px;
+
     object-fit: cover;
-    background-color: #eee;
 }
 
-.example-card h2{
-    font-size: 22px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 12px;
-}
-
-.example-card p{
-    margin: 5px 0;
-    color: #555;
-    font-size: 14px;
-}
+/* CONTEUDO */
 
 .example-card mat-card-content{
-    padding: 20px;
+    padding: 24px;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
 }
 
+/* CATEGORIA */
+
+.categoria{
+
+    background-color: #ede9fe;
+
+    color: #7c3aed;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    width: fit-content;
+}
+
+/* NOME */
+
+.example-card h2{
+
+    font-size: 24px;
+
+    min-height: 65px;
+
+    max-height: 65px;
+
+    overflow: hidden;
+}
+
+/* PREÇO */
+
+.preco{
+
+    font-size: 32px;
+
+    color: #7c3aed;
+
+    font-weight: bold;
+
+    margin-top: auto;
+}
+
+/* BOTÃO */
+
 .example-card mat-card-actions{
-    padding: 0 20px 20px 20px;
+
+    padding:
+    0 24px 24px 24px;
+
+    margin-top: auto;
 }
 
 .example-card button{
+
     width: 100%;
-    background-color: #f05a00;
+
+    height: 50px;
+
+    border-radius: 14px;
+
+    border: none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #7c3aed,
+        #6366f1
+    );
+
     color: white;
+
     font-weight: bold;
-    border-radius: 6px;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
 }
 
-/* CARD ESGOTADO */
+.example-card button:hover{
+
+    transform: scale(1.02);
+}
+
+/* ESGOTADO */
+
 .card-esgotado{
-    background-color: #f1f1f1;
-    opacity: 0.85;
+
+    opacity: 0.75;
 }
 
 .card-esgotado img{
+
     filter: grayscale(100%);
 }
 
-.card-esgotado h2{
-    color: #777;
-}
+.card-esgotado .preco{
 
-.card-esgotado p{
-    color: #888;
+    color: #9ca3af;
 }
 
 .card-esgotado button{
-    background-color: #999;
-    color: white;
+
+    background: #9ca3af;
 }
 
+/* FAIXA */
+
 .faixa-esgotado{
+
     position: absolute;
-    top: 18px;
-    left: -35px;
-    background-color: #333;
+
+    top: 20px;
+    left: -38px;
+
+    background-color: #111827;
+
     color: white;
-    padding: 8px 45px;
-    font-size: 13px;
+
+    padding: 10px 50px;
+
+    font-size: 12px;
+
     font-weight: bold;
+
     transform: rotate(-35deg);
+
     z-index: 2;
-    letter-spacing: 1px;
+
+    letter-spacing: 2px;
+}
+
+.card-wrapper{
+
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    align-items: stretch;
 }

@@ -1,85 +1,176 @@
-.faixa-frete {
-  background-color: #8a3a00;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
+.top-header{
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
 
-.navbar {
-  background-color: #f05a00;
-  padding: 25px 0;
+.top-header-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
 }
 
-.navbar-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+.header{
+    background-color: white;
+    padding: 25px 0;
 }
 
-.navbar-logo {
-  color: #111;
-  font-size: 26px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  white-space: nowrap;
+.header-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar-logo span {
-  font-weight: normal;
+.logo{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
-.campo-busca {
-  width: 45%;
-  height: 48px;
-  border: none;
-  border-radius: 6px;
-  padding: 0 18px;
-  font-size: 16px;
+.logo span{
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
 
-.botao-carrinho {
-  background-color: white;
-  color: #1f2937;
-  border: none;
-  font-weight: bold;
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-size: 16px;
+.logo small{
+    color: #7c3aed;
+    letter-spacing: 5px;
 }
 
-.menu-baixo {
-  background-color: white;
-  padding: 18px 0;
-  text-align: center;
+.busca-box{
+    width: 45%;
+    background-color: #f3f4f6;
+    border-radius: 40px;
+    padding: 8px;
+    display: flex;
 }
 
-.navbar-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 45px;
-  margin: 0;
-  padding: 0;
+.busca-box input{
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    outline: none;
 }
 
-.navbar-item {
-  cursor: pointer;
+.busca-box button{
+    border: none;
+    background-color: #7c3aed;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
-.navbar-item a {
-  color: #111;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-decoration: none;
+.acoes-header{
+    display: flex;
+    gap: 15px;
 }
 
-.navbar-item a:hover {
-  color: #f05a00;
+.btn-login,
+.btn-carrinho{
+    border: none;
+    background-color: #f3f4f6;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    position: relative;
 }
 
+.btn-carrinho span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #7c3aed;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    background-color: white;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 18px;
+    margin: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.menu li{
+    position: relative;
+}
+
+.submenu{
+
+    display: none !important;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    background-color: white;
+
+    padding: 30px 20px 20px 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+
+    flex-direction: column;
+
+    gap: 15px !important;
+
+    min-width: 220px;
+
+    z-index: 999;
+}
+
+/* ÁREA INVISÍVEL PRA NÃO FECHAR */
+
+.submenu::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: -20px;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 20px;
+
+    background-color: transparent;
+}
+
+.menu li:hover .submenu{
+    display: flex !important;
+}
