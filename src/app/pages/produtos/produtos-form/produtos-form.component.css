@@ -1,36 +1,35 @@
-.content-container {
+.content-container{
     width: 85%;
     max-width: 1050px;
     margin: 40px auto;
     padding: 35px;
-    background: #ffffff;
+    background: white;
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.content-container h1 {
+.content-container h1{
     margin-bottom: 30px;
     color: #111827;
     font-size: 28px;
 }
 
-form {
+form{
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.linha {
+.linha{
     display: flex;
     gap: 22px;
 }
 
-.campo {
+.campo{
     width: 100%;
 }
 
-label {
+label{
     font-size: 14px;
     font-weight: bold;
     color: #374151;
@@ -38,7 +37,7 @@ label {
     display: block;
 }
 
-.input-simples {
+.input-simples{
     width: 100%;
     padding: 14px;
     border: 1px solid #d1d5db;
@@ -49,16 +48,16 @@ label {
     box-sizing: border-box;
 }
 
-.input-simples:focus {
+.input-simples:focus{
     border-color: #111827;
     background-color: white;
 }
 
-textarea.input-simples {
+textarea.input-simples{
     resize: vertical;
 }
 
-.input-submeter {
+.input-submeter{
     margin-top: 10px;
     padding: 15px;
     border: none;
@@ -70,16 +69,15 @@ textarea.input-simples {
     cursor: pointer;
 }
 
-.input-submeter:hover {
-    background-color: #7a51a5dd;
+.input-submeter:hover{
+    background-color: #7a51a5;
 }
 
-@media(max-width: 768px) {
-    .linha {
+@media(max-width: 768px){
+    .linha{
         flex-direction: column;
     }
-
-    .content-container {
+    .content-container{
         width: 92%;
         padding: 25px;
     }

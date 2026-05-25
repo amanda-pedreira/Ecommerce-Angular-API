@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { PessoaServiceService } from '../../services/pessoa-service.service';
+import { PessoaServiceService } from '../../../services/pessoa-service.service';
 
 
 @Component({
@@ -29,22 +29,28 @@ export class PessoaLoginComponent {
     this.pessoaService.listar().subscribe(lista => {
 
       const usuarioEncontrado = lista.find(pessoa =>
-
-        pessoa.usuario == this.login &&
-        pessoa.senha == this.senha
-
+        pessoa.usuario == this.login && pessoa.senha == this.senha
       )
 
       if(usuarioEncontrado && usuarioEncontrado.cargo.toLowerCase() === 'administrador' && usuarioEncontrado.status.toLowerCase() === 'ativo'){
 
         alert('Login realizado')
-
         this.router.navigate(['/admin'])
+
+      }else if(usuarioEncontrado && usuarioEncontrado.status.toLowerCase() === 'inativo'){
+
+        alert('Usuário está inativo')
+        this.router.navigate(['/login-pessoa'])
+
+      }else if(usuarioEncontrado && usuarioEncontrado.cargo.toLowerCase() !== 'administrador'){
+
+        alert('Usuário não é administrador')
+        this.router.navigate(['/login-pessoa'])
 
       }else{
 
-        alert('Login ou senha inválidos, ou usuário não é administrador ou está inativo.')
-
+         alert('Email ou senha inválidos')
+        this.router.navigate(['/login-pessoa'])
       }
 
     })

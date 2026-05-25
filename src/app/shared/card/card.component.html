@@ -1,73 +1,30 @@
 @if(estoque <= 0){
+    <mat-card class="produto produto-sem-estoque" appearance="outlined">
+        <div class="aviso-esgotado">ESGOTADO</div>
+        <img mat-card-image [src]="imageUrl" alt="foto do produto">
 
-<mat-card class="example-card card-esgotado" appearance="outlined">
+        <mat-card-content>
+            <h2>{{ nome }}</h2>
+            <span class="tipo-produto">{{ categoria }}</span>
+            <h3 class="valor">R$ {{ preco }}</h3>
+        </mat-card-content>
 
-    <div class="faixa-esgotado">
-        ESGOTADO
-    </div>
-
-    <img mat-card-image [src]="imageUrl" alt="descrição da foto">
-
-    <mat-card-content>
-
-        
-
-        <h2>
-            {{ nome }}
-        </h2>
-
-        <span class="categoria">
-            {{ categoria }}
-        </span>
-
-        <h3 class="preco">
-            {{ preco }}
-        </h3>
-
-    </mat-card-content>
-
-    <mat-card-actions>
-
-        <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
-            COMPRAR
-        </button>
-
-    </mat-card-actions>
-
-</mat-card>
-
+        <mat-card-actions>
+            <button mat-flat-button [routerLink]="['/detalhes-produto', id]">COMPRAR</button>
+        </mat-card-actions>
+    </mat-card>
 }@else{
+    <mat-card class="produto" appearance="outlined">
+        <img mat-card-image [src]="imageUrl" alt="foto do produto">
 
-<mat-card class="example-card" appearance="outlined">
+        <mat-card-content>
+            <h2>{{ nome }}</h2>
+            <span class="tipo-produto">{{ categoria }}</span>
+            <h3 class="valor">R$ {{ preco }}</h3>
+        </mat-card-content>
 
-    <img mat-card-image [src]="imageUrl" alt="descrição da foto">
-
-    <mat-card-content>
-
-        
-
-        <h2>
-            {{ nome }}
-        </h2>
-
-        <span class="categoria">
-            {{ categoria }}
-        </span>
-
-        <h3 class="preco">
-            {{ preco }}
-        </h3>
-
-    </mat-card-content>
-
-    <mat-card-actions>
-
-        <button mat-flat-button color="primary" [routerLink]="['/detalhes-produto', id]">
-            COMPRAR
-        </button>
-
-    </mat-card-actions>
-
-</mat-card>
-
+        <mat-card-actions>
+            <button mat-flat-button [routerLink]="['/detalhes-produto', id]">COMPRAR</button>
+        </mat-card-actions>
+    </mat-card>
 }

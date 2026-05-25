@@ -2,16 +2,15 @@
     <h1>{{ titulo }}</h1>
 
     <form>
-
         <div class="linha">
             <div class="campo">
                 <label for="input-nome">Nome do produto</label>
-                <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome do produto" type="text" [(ngModel)]="produtos.nome"/>
+                <input class="input-simples" id="input-nome" name="input-nome" placeholder="Digite o nome do produto" type="text" [(ngModel)]="produtos.nome">
             </div>
 
             <div class="campo">
                 <label for="input-preco">Preço</label>
-                <input class="input-simples" id="input-preco" name="input-preco" placeholder="Digite o preço" type="text" [(ngModel)]="produtos.preco"/>
+                <input class="input-simples" id="input-preco" name="input-preco" placeholder="Digite o preço" type="text" [(ngModel)]="produtos.preco">
             </div>
         </div>
 
@@ -31,13 +30,13 @@
 
             <div class="campo">
                 <label for="input-estoque">Estoque</label>
-                <input class="input-simples" id="input-estoque" name="input-estoque" placeholder="Quantidade" type="number" [(ngModel)]="produtos.estoque"/>
+                <input class="input-simples" id="input-estoque" name="input-estoque" placeholder="Quantidade" type="number" [(ngModel)]="produtos.estoque">
             </div>
         </div>
 
         <div class="campo">
             <label for="input-imagem">Imagem</label>
-            <input class="input-simples" id="input-imagem" name="input-imagem" placeholder="Cole o link da imagem" type="text" [(ngModel)]="produtos.imagem"/>
+            <input class="input-simples" id="input-imagem" name="input-imagem" placeholder="Cole o link da imagem" type="text" [(ngModel)]="produtos.imagem">
         </div>
 
         <div class="linha">
@@ -65,11 +64,6 @@
             <textarea class="input-simples" id="input-detalhes" name="input-detalhes" placeholder="Digite os detalhes do produto" rows="5" [(ngModel)]="produtos.detalhes"></textarea>
         </div>
 
-        <button class="input-submeter" type="button" (click)="submeter()">
-            Cadastrar Produto
-        </button>
-
+        <button class="input-submeter" type="button" (click)="submeter()">Cadastrar Produto</button>
     </form>
-    
 </div>
-

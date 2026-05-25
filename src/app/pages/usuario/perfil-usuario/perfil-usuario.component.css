@@ -1,26 +1,25 @@
-.pagina-perfil{
+.perfil{
     min-height: 100vh;
     background-color: #f3f4f6;
     padding: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.perfil-container{
+.caixa-perfil{
     max-width: 1100px;
     margin: auto;
     display: flex;
     gap: 25px;
 }
 
-.menu-perfil{
+.menu-lado{
     width: 280px;
     background-color: white;
     border-radius: 20px;
     padding: 28px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
 }
 
-.avatar{
+.foto{
     width: 85px;
     height: 85px;
     border-radius: 50%;
@@ -34,17 +33,17 @@
     margin-bottom: 18px;
 }
 
-.menu-perfil h2{
+.menu-lado h2{
     margin: 0;
     color: #3a2362;
 }
 
-.menu-perfil p{
+.menu-lado p{
     color: #6b7280;
     margin-bottom: 25px;
 }
 
-.menu-perfil a{
+.menu-lado a{
     display: block;
     padding: 13px 15px;
     margin-bottom: 10px;
@@ -54,41 +53,40 @@
     cursor: pointer;
 }
 
-.menu-perfil a:hover,
-.menu-perfil .ativo{
+.menu-lado a:hover,
+.menu-lado .selecionado{
     background-color: #3a2362;
     color: white;
 }
 
-.menu-perfil .sair{
-    color: #dc2626;
+.menu-lado .sair{
+    color: red;
 }
 
-.conteudo-perfil{
+.dados{
     flex: 1;
     background-color: white;
     border-radius: 20px;
     padding: 32px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
 }
 
-.conteudo-perfil h1{
+.dados h1{
     margin: 0;
     color: #3a2362;
 }
 
-.subtitulo{
+.texto{
     color: #6b7280;
     margin-bottom: 25px;
 }
 
-.cards-resumo{
+.resumo{
     display: flex;
     gap: 18px;
     margin-bottom: 30px;
 }
 
-.card-info{
+.quadrado{
     flex: 1;
     padding: 20px;
     border-radius: 16px;
@@ -96,13 +94,13 @@
     border: 1px solid #e5e7eb;
 }
 
-.card-info span{
+.quadrado span{
     display: block;
     color: #6b7280;
     margin-bottom: 8px;
 }
 
-.card-info strong{
+.quadrado b{
     color: #3a2362;
     font-size: 24px;
 }
@@ -140,7 +138,7 @@ form{
     box-sizing: border-box;
 }
 
-.btn-salvar{
+button{
     padding: 15px;
     border: none;
     border-radius: 14px;
@@ -148,19 +146,4 @@ form{
     color: white;
     font-weight: bold;
     cursor: pointer;
-}
-
-@media(max-width: 800px){
-    .perfil-container{
-        flex-direction: column;
-    }
-
-    .menu-perfil{
-        width: auto;
-    }
-
-    .linha,
-    .cards-resumo{
-        flex-direction: column;
-    }
 }

@@ -48,36 +48,15 @@ export class DetalhesProdutoComponent {
   }
 
 
-  cep: string = '';
 
-  valorFrete: string = '';
-
-  calcularFrete(){
-
-    if(this.cep.trim() == ''){
-
-      alert('Digite um CEP');
-
-      return;
-    }
-
-    const frete = Math.floor(Math.random() * 30) + 10;
-
-    this.valorFrete = frete.toString();
-  }
 
 
 
   adicionarCarrinho(){
-
     let carrinho = JSON.parse(localStorage.getItem('carrinho') || '[]');
-
     carrinho.push(this.produto);
-
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
-
     alert('Produto adicionado ao carrinho');
-
 }
 
 

@@ -70,13 +70,3 @@ label {
     background-color: #7a51a5dd;
 }
 
-@media(max-width: 768px) {
-    .linha {
-        flex-direction: column;
-    }
-
-    .content-container {
-        width: 92%;
-        padding: 24px;
-    }
-}

@@ -1,88 +1,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<div class="top-header">
 
-  <div class="top-header-container">
-
-    <span>
-      Frete grátis acima de R$149
-    </span>
-
-  </div>
-
+<div class="topo-header">
+    <div class="topo-box">
+        <span>Frete grátis acima de R$149</span>
+    </div>
 </div>
 
 <header class="header">
+    <div class="header-box">
+        <a class="logo" routerLink="/">
+            <span>POWER</span>
+            <small>SUPLEMENTOS</small>
+        </a>
 
-  <div class="header-container">
+        <div class="busca">
+            <input type="text" placeholder="Buscar whey, creatina...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
 
-    <a class="logo" routerLink="/">
-      <span>POWER</span>
-      <small>SUPLEMENTOS</small>
-    </a>
-
-    <div class="busca-box">
-
-      <input
-        type="text"
-        placeholder="Buscar whey, creatina..."
-      >
-
-      <button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-
+        <div class="botoes-header">
+            <button class="login-btn" routerLink="/login-usuario"><i class="fa-regular fa-user"></i></button>
+            <button class="carrinho-btn" routerLink="/carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
     </div>
-
-    <div class="acoes-header">
-
-      <button class="btn-login" routerLink="/login-usuario">
-        👤
-      </button>
-
-      <button class="btn-carrinho" routerLink="/carrinho">
-        🛒
-      </button>
-
-    </div>
-
-  </div>
-
 </header>
 
 <nav class="menu">
-
-  <ul>
-
-    @for (item of itensMenu; track item) {
-
-      <li>
-
-        <a routerLink="{{item.link}}">
-          {{ item.label }}
-        </a>
-
-        @if(item.label === 'Produtos'){
-
-          <ul class="submenu">
-
-            @for(subitem of itensSubmenu; track subitem){
-
-              <li class="submenu-hover">
-                <a routerLink="{{subitem.link}}">
-                  {{ subitem.label }}
-                </a>
-              </li>
-
-            }
-
-          </ul>
-
+    <ul>
+        @for (item of itensMenu; track item) {
+            <li>
+                <a routerLink="{{item.link}}">{{ item.label }}</a>
+                
+                @if(item.label === 'Produtos'){
+                    <ul class="submenu">
+                        @for(subitem of itensSubmenu; track subitem){
+                            <li class="submenu-item">
+                                <a routerLink="{{subitem.link}}">{{ subitem.label }}</a>
+                            </li>
+                        }
+                    </ul>
+                }
+            </li>
         }
-
-      </li>
-
-    }
-
-  </ul>
-
+    </ul>
 </nav>

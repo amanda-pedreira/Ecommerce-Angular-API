@@ -2,13 +2,43 @@
   "pessoas": [
     {
       "id": "PSF5e6m4Lws",
-      "nome": "amanda",
+      "nome": "Amanda",
       "dtNascimento": "2006-07-31",
-      "cpf": "50601442830",
-      "cargo": "administrador",
-      "usuario": "amands",
-      "senha": "123",
+      "cpf": "123.456.789-10",
+      "cargo": "Administrador",
+      "usuario": "Amanda3107",
+      "senha": "12345",
       "status": "Ativo"
+    },
+    {
+      "id": "qIeStxPWX-c",
+      "nome": "Emilly",
+      "dtNascimento": "2000-01-01",
+      "cpf": "111.111.111-11",
+      "cargo": "Analista",
+      "usuario": "Emilly0101",
+      "senha": "12345",
+      "status": "Ativo"
+    },
+    {
+      "nome": "Isabele",
+      "dtNascimento": "2000-02-02",
+      "cpf": "222-222-222-22",
+      "usuario": "Isabele0202",
+      "senha": "12345",
+      "cargo": "Estágio",
+      "status": "Inativo",
+      "id": "2KFbINjT3xA"
+    },
+    {
+      "nome": "Danilo",
+      "dtNascimento": "2000-03-03",
+      "cpf": "333-333-333-33",
+      "usuario": "Danilo0303",
+      "senha": "12345",
+      "cargo": "Administrador",
+      "status": "Inativo",
+      "id": "ghxK77j6am0"
     }
   ],
   "produtos": [
@@ -213,58 +243,41 @@
   ],
   "contatos": [
     {
-      "nome": "qqqqqqqq",
-      "email": "qqqqqqq",
-      "assunto": "Sim",
-      "mensagem": "qqqqqqqqqqqqq",
-      "id": "7ROGCs32zYc"
-    },
-    {
-      "nome": "amanda",
-      "email": "amandaluanap7@gmail.com",
+      "nome": "Joãozinho",
+      "email": "joaozinho@gmail.com",
       "assunto": "Dúvida sobre produto",
-      "mensagem": "A",
-      "id": "AuRvZ2LnqdQ"
+      "mensagem": "Oi, eu tenho uma dúvida sobre alguns produtos.",
+      "id": "HdyiC3TDZl8"
     },
     {
-      "id": "W8UQgT98rLE"
-    },
-    {
-      "nome": "q",
-      "email": "q",
+      "nome": "Mariazinha",
+      "email": "mariazinha@gmail.com",
       "assunto": "Pedido atrasado",
-      "mensagem": "q",
-      "id": "rrPNqwSszQc"
+      "mensagem": "Boa tarde. Ainda não recebi meu produto, como posso resolver?",
+      "id": "zJUxAO1pDIc"
     }
   ],
   "usuario": [
     {
-      "nome": "Amanda Luana Pedreira",
-      "email": "amandaluanap7@gmail.com",
-      "telefone": "11949074140",
+      "nome": "Vitor Conrado",
+      "email": "vitorconrado@gmail.com",
+      "telefone": "1191234-5678",
       "senha": "123456",
       "id": "SrIH3dMugdc"
     },
     {
-      "nome": "Amanda Luana Pedreira",
-      "email": "amandaluanap7@gmail.com",
-      "telefone": "11949074140",
+      "nome": "Matheus Xavier",
+      "email": "matheusxavier@gmail.com",
+      "telefone": "1198765-4321",
       "senha": "123456",
-      "id": "_0j_6kJLyuU"
+      "id": "SrIH3dMugdc"
     },
     {
-      "nome": "Amanda Luana Pedreira",
-      "email": "amandaluanap7@gmail.com",
+      "nome": "Amanda Luana",
+      "email": "amandaluana@gmail.com",
       "telefone": "11949074140",
-      "senha": "123321",
-      "id": "TRaGh-3R8VA"
-    },
-    {
-      "nome": "Amanda Luana Pedreira",
-      "email": "amandaluanap7@gmail.com",
-      "telefone": "11949074140",
-      "senha": "123",
-      "id": "eC5jGy2Mq1Y"
+      "senha": "12345",
+      "id": "tl-nda3I3fA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -2,8 +2,6 @@ body{
     background-color: #f6f3ff;
 }
 
-/* HERO */
-
 .hero{
     min-height: 100vh;
     display: flex;
@@ -11,18 +9,11 @@ body{
     justify-content: space-between;
     padding: 80px 8%;
     overflow: hidden;
-    background:
-    linear-gradient(
-        rgba(10,10,20,0.75),
-        rgba(10,10,20,0.85)
-    ),
+    background: linear-gradient(rgba(10,10,20,0.75), rgba(10,10,20,0.85)),
     url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1974&auto=format&fit=crop');
-
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
-  }
+}
 
 .hero-esquerda{
     width: 50%;
@@ -40,9 +31,7 @@ body{
 .hero-esquerda h1{
     font-size: 72px;
     line-height: 1;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    font-weight: bold;
+    margin: 30px 0 25px 0;
 }
 
 .hero-esquerda p{
@@ -67,11 +56,6 @@ body{
     border-radius: 40px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.hero-botoes button:hover{
-    transform: translateY(-5px);
 }
 
 .hero-botoes a{
@@ -82,14 +66,6 @@ body{
 .hero-direita{
     width: 40%;
     position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-direita img{
-    width: 430px;
-    z-index: 2;
-    filter: drop-shadow(0 25px 40px rgba(0,0,0,0.4));
 }
 
 .blur{
@@ -113,8 +89,6 @@ body{
     right: 0;
 }
 
-
-
 .hero-numeros{
     display: flex;
     gap: 40px;
@@ -130,15 +104,11 @@ body{
     color: #d1d5db;
 }
 
-/* BENEFICIOS */
-
 .beneficios{
     width: 85%;
     margin: -60px auto 80px auto;
     display: flex;
     gap: 25px;
-    position: relative;
-    z-index: 10;
 }
 
 .beneficio-card{
@@ -158,8 +128,6 @@ body{
     color: #6b7280;
 }
 
-/* TITULO */
-
 .titulo-produtos{
     text-align: center;
     margin-bottom: 60px;
@@ -172,9 +140,7 @@ body{
 
 .titulo-produtos h2{
     font-size: 52px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-weight: bold;
+    margin: 15px 0 10px 0;
 }
 
 .titulo-produtos p{
@@ -182,15 +148,11 @@ body{
     font-size: 18px;
 }
 
-/* CARDS */
-
 .card-wrapper{
     width: 90%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
     padding-bottom: 80px;
 }
-

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { UsuarioServiceService } from '../../services/usuario-service.service';
+import { UsuarioServiceService } from '../../../services/usuario-service.service';
 
 @Component({
   selector: 'app-login-usuario',
@@ -26,26 +26,17 @@ export class LoginUsuarioComponent {
     this.usuarioService.listar().subscribe(lista => {
 
       const usuarioEncontrado = lista.find(usuario =>
-
-        usuario.email == this.login &&
-        usuario.senha == this.senha
-
+        usuario.email == this.login && usuario.senha == this.senha
       )
 
       if(usuarioEncontrado){
-
         alert('Login realizado')
-
         this.router.navigate(['/perfil-usuario'])
-
       }else{
-
         alert('Email ou senha inválidos')
-
       }
-
     })
-
+    
   }
 
   // onBotaoClicado() {

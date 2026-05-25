@@ -2,31 +2,22 @@
 
     <h2>Lista de Produtos</h2>
 
-    <button
-        class="btn-incluir"
-        routerLink="/admin/produtos/incluir">
+    <button class="btn-incluir" routerLink="/admin/produtos/incluir">Incluir produto</button>
 
-        Incluir produto
-
-    </button>
-    <br><br>
     <table>
 
         <thead>
-
             <tr>
-
                 <th>ID</th>
                 <th>Produto</th>
                 <th>Preço</th>
                 <th>Categoria</th>
                 <th>Imagem</th>
+                <th>Destaque</th>
                 <th>Estoque</th>
                 <th>Status</th>
                 <th>Ações</th>
-
             </tr>
-
         </thead>
 
         <tbody>
@@ -36,43 +27,22 @@
                 <tr>
 
                     <td>#{{produtos.id}}</td>
-
                     <td>{{produtos.nome}}</td>
-
                     <td>R$ {{produtos.preco}}</td>
-
                     <td>{{produtos.categoria}}</td>
 
                     <td>
-                        <img
-                            [src]="produtos.imagem"
-                            width="55"
-                            height="55"
-                            style="border-radius: 12px; object-fit: cover;">
+                        <img [src]="produtos.imagem" style="width: 55px; height: 55px; border-radius: 12px; object-fit: cover;">
                     </td>
 
+                    <td>{{produtos.destaque}}</td>
                     <td>{{produtos.estoque}}</td>
-
                     <td>{{produtos.status}}</td>
 
                     <td>
+                        <button class="btn-editar" [routerLink]="['/admin/produtos/alterar', produtos.id]">Editar</button>
 
-                        <button
-                            class="btn-editar"
-                            [routerLink]="['/admin/produtos/alterar', produtos.id]">
-
-                            Editar
-
-                        </button>
-
-                        <button
-                            class="btn-excluir"
-                            (click)="excluir(produtos.id!)">
-
-                            Excluir
-
-                        </button>
-
+                        <button class="btn-excluir" (click)="excluir(produtos.id!)">Excluir</button>
                     </td>
 
                 </tr>
@@ -82,6 +52,5 @@
         </tbody>
 
     </table>
-
 
 </div>

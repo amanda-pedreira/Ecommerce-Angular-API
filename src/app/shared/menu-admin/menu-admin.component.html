@@ -2,67 +2,35 @@
 
 <div class="menu-admin" id="menuAdmin">
 
-    <!-- SETA -->
-
-    <div class="seta-menu">
+    <div class="botao-menu">
         <button (click)="fecharMenu()" id="fechar" style="background: transparent; border: none; color: blueviolet;">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
+
         <button (click)="abrirMenu()" id="abrir" style="display: none; background: transparent; border: none; color: blueviolet;">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
     </div>
 
-    <!-- LOGO -->
-
     <div class="logo-admin" id="controlarLogo" style="display: block;">
-
         <div class="logo-texto">
-
-            <h2>
-                POWER
-            </h2>
-
-            <span>
-                SUPLEMENTOS
-            </span>
-
+            <h2>POWER</h2>
+            <span>SUPLEMENTOS</span>
         </div>
-
     </div>
 
-    <!-- MENU -->
-
-    <ul class="navbar-list" id="controlarLista" style="display: block;">
-
+    <ul class="lista-menu" id="controlarLista" style="display: block;">
         @for (item of itensMenu; track item) {
-
-            <li class="navbar-item">
-
+            <li class="item-menu">
                 <a routerLink="{{item.link}}">
-
-                    <i class="fa-solid fa-circle"></i>
-
-                    {{ item.label }}
-
+                    <i class="fa-solid fa-circle"></i>{{ item.label }}
                 </a>
-
             </li>
-
         }
-
     </ul>
 
-    <!-- VOLTAR -->
-
-    <div class="footer-admin" id="controlarFooter" style="display: block;">
-
-        <a routerLink="/">
-
-            <i class="fa-solid fa-arrow-left"></i>
-
-        </a>
-
+    <div class="rodape-menu" id="controlarFooter" style="display: block;">
+        <a routerLink="/"><i class="fa-solid fa-arrow-left"></i></a>
     </div>
 
 </div>

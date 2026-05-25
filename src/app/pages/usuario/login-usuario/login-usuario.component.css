@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background-color: #eef2ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 700px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.formulario{
+    width: 55%;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nome-site{
+    background-color: #ede9fe;
+    color: #7c3aed;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.formulario h2{
+    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.formulario p{
+    color: #6b7280;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input{
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 0 15px;
+    background-color: #f9fafb;
+    outline: none;
+}
+
+form button{
+    height: 55px;
+    border: none;
+    border-radius: 14px;
+    margin-top: 30px;
+    background-color: #7c3aed;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.baixo-login{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.baixo-login span{
+    color: #6b7280;
+}
+
+.baixo-login a{
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.imagem-login{
+  width: 45%;
+    background: linear-gradient(rgba(20,20,40,0.55), rgba(20,20,40,0.75)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+
+.texto-img h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto-img p{
+    color: #d1d5db;
+    line-height: 1.5;
+}

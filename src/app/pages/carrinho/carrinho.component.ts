@@ -31,11 +31,6 @@ export class CarrinhoComponent {
       item => item !== produto
     );
 
-    localStorage.setItem(
-      'carrinho',
-      JSON.stringify(this.listaCarrinho)
-    );
-
     this.calcularTotal();
   }
 
@@ -46,7 +41,7 @@ export class CarrinhoComponent {
     this.listaCarrinho.forEach(produto => {
       this.total += Number(produto.preco);
     });
-  }
+  } 
 
   aplicarCupom(){
 

@@ -1,220 +1,95 @@
-.example-card{
-
+.produto{
     width: 320px !important;
-
     height: 500px !important;
-
     min-width: 320px;
-
     max-width: 320px;
-
-    min-height: 500px;
-
-    max-height: 500px;
-
     border-radius: 28px;
-
     overflow: hidden;
-
     background-color: white;
-
     box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-
     position: relative;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
 }
 
-.example-card:hover{
-
+.produto:hover{
     transform: translateY(-8px);
-
     box-shadow: 0 25px 45px rgba(0,0,0,0.12);
 }
 
-/* IMAGEM */
-
-.example-card img{
-
+.produto img{
     width: 100%;
-
     height: 240px !important;
-
-    min-height: 240px;
-
-    max-height: 240px;
-
     object-fit: cover;
 }
 
-/* CONTEUDO */
-
-.example-card mat-card-content{
+.produto mat-card-content{
     padding: 24px;
-
-    flex: 1;
-
     display: flex;
     flex-direction: column;
 }
 
-/* CATEGORIA */
-
-.categoria{
-
-    background-color: #ede9fe;
-
-    color: #7c3aed;
-
-    padding: 8px 16px;
-
-    border-radius: 30px;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 1px;
-
-    display: inline-block;
-
-    margin-bottom: 25px;
-
-    width: fit-content;
-}
-
-/* NOME */
-
-.example-card h2{
-
+.produto h2{
     font-size: 24px;
-
-    min-height: 15px;
-
     max-height: 65px;
-
     overflow: hidden;
 }
 
-/* PREÇO */
-
-.preco{
-
-    font-size: 25px;
-
-    color: #0a0a0a;
-
+.tipo-produto{
+    background-color: #ede9fe;
+    color: #7c3aed;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
     font-weight: bold;
-
-    margin-top: auto;
-}
-
-/* BOTÃO */
-
-.example-card mat-card-actions{
-
-    padding:
-    0 24px 24px 24px;
-
-    margin-top: auto;
-}
-
-.example-card button{
-
-    width: 100%;
-
-    height: 50px;
-
-    border-radius: 14px;
-
-    border: none;
-
-    background:
-    linear-gradient(
-        135deg,
-        #7c3aed,
-        #6366f1
-    );
-
-    color: white;
-
-    font-weight: bold;
-
     letter-spacing: 1px;
-
-    transition: 0.3s;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: fit-content;
 }
 
-.example-card button:hover{
-
-    transform: scale(1.02);
+.valor{
+    font-size: 25px;
+    color: #0a0a0a;
+    font-weight: bold;
+    margin-top: auto;
 }
 
-/* ESGOTADO */
-
-.card-esgotado{
-
-    opacity: 0.75;
+.produto button{
+    width: 100%;
+    height: 50px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.card-esgotado img{
-
+.produto-sem-estoque img{
+    /* serve pra deixar a imagem acizentada */
     filter: grayscale(100%);
 }
 
-.card-esgotado .preco{
-
+.produto-sem-estoque .valor{
     color: #9ca3af;
 }
 
-.card-esgotado button{
-
+.produto-sem-estoque button{
     background: #9ca3af;
 }
 
-/* FAIXA */
-
-.faixa-esgotado{
-
+.aviso-esgotado{
     position: absolute;
-
     top: 20px;
     left: -38px;
-
     background-color: #111827;
-
     color: white;
-
     padding: 10px 50px;
-
     font-size: 12px;
-
     font-weight: bold;
-
     transform: rotate(-35deg);
-
     z-index: 2;
-
     letter-spacing: 2px;
-}
-
-.card-wrapper{
-
-    width: 90%;
-
-    margin: auto;
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 30px;
-
-    align-items: stretch;
 }

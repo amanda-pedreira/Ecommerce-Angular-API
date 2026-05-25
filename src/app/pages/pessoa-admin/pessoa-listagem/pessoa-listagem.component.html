@@ -1,23 +1,13 @@
 <div class="content-container">
 
     <h2>Lista de Funcionários</h2>
-
-    <button
-        class="btn-incluir"
-        routerLink="/admin/incluir">
-
-        Incluir funcionário
-
-    </button>
+    <button class="btn-incluir" routerLink="/admin/incluir">Incluir funcionário</button>
 
     <br><br>
 
     <table>
-
         <thead>
-
             <tr>
-
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Nascimento</th>
@@ -27,21 +17,15 @@
                 <th>Senha</th>
                 <th>Status</th>
                 <th>Ações</th>
-
             </tr>
-
         </thead>
 
         <tbody>
-
             @for (pessoa of listaPessoas; track pessoa){
-
                 <tr>
-
                     <td>#{{pessoa.id}}</td>
 
                     <td>{{pessoa.nome}}</td>
-
 
                     <td>{{pessoa.dtNascimento}}</td>
 
@@ -53,37 +37,14 @@
                    
                     <td>{{pessoa.senha}}</td>
 
-
                     <td>{{pessoa.status}}</td>
 
-
-
                     <td>
-
-                        <button
-                            class="btn-editar"
-                            [routerLink]="['/admin/alterar', pessoa.id]">
-
-                            Editar
-
-                        </button>
-
-                        <button
-                            class="btn-excluir"
-                            (click)="excluir(pessoa.id!)">
-
-                            Excluir
-
-                        </button>
-
+                        <button class="btn-editar" [routerLink]="['/admin/alterar', pessoa.id]">Editar</button>
+                        <button class="btn-excluir" (click)="excluir(pessoa.id!)">Excluir</button>
                     </td>
-
                 </tr>
-
             }
-
         </tbody>
-
     </table>
-
 </div>

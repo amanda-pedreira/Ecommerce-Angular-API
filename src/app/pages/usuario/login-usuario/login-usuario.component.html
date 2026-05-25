@@ -1,0 +1,30 @@
+<div class="login">
+    <div class="formulario">
+        <span class="nome-site">POWER STORE</span>
+        <h2>Entrar</h2>
+        <p>Faça login para acessar sua conta.</p>
+
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Digite seu email" [(ngModel)]="login" name="email">
+
+            <label>Senha</label>
+            <input type="password" placeholder="Digite sua senha" [(ngModel)]="senha" name="senha">
+
+            <button (click)="onBotaoClicado()">Entrar</button>
+
+            <div class="baixo-login">
+                <span>Não possui conta?</span>
+                <a routerLink="/cadastro-usuario">Criar conta</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="imagem-login">
+        <div class="texto-img">
+            <span>POWER SUPLEMENTOS</span>
+            <h1>Comece por aqui sua evolução.</h1>
+            <p>Acesse sua conta e continue buscando performance máxima.</p>
+        </div>
+    </div>
+</div>

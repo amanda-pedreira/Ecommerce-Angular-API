@@ -1,92 +1,36 @@
 <div class="detalhe-container">
 
     <div class="imagem-produto">
-
         <img [src]="produto.imagem">
-
     </div>
 
     <div class="info-produto">
+        <span class="categoria">{{ produto.categoria }}</span>
 
-        <span class="categoria">
-            {{ produto.categoria }}
-        </span>
+        <h1>{{ produto.nome }}</h1>
 
-        <h1>
-            {{ produto.nome }}
-        </h1>
-
-        <div class="preco">
-            R$ {{ produto.preco }}
-        </div>
+        <div class="preco">R$ {{ produto.preco }}</div>
 
         <div class="descricao">
-
-            <h3>
-                Sobre o produto
-            </h3>
-
-            <p>
-                {{ produto.detalhes }}
-            </p>
-
+            <h3>Sobre o produto</h3>
+            <p>{{ produto.detalhes }}</p>
         </div>
 
         @if(produto.estoque <= 5){
-
             <div class="alerta-estoque">
-
                 Restam apenas {{ produto.estoque }} unidades
-
             </div>
-
         }
 
         <button class="btn-comprar" (click)="adicionarCarrinho()">
-
             COMPRAR AGORA
-
         </button>
 
-        <!-- FRETE -->
 
         <div class="box-frete">
-
-            <label>
-                Calcular frete
-            </label>
-
-            <div class="frete-linha">
-
-                <input
-                    type="text"
-                    placeholder="Digite seu CEP"
-                    [(ngModel)]="cep"
-                >
-
-                <button (click)="calcularFrete()">
-
-                    OK
-
-                </button>
-
-            </div>
-
-            @if(valorFrete){
-
-                <p class="resultado-frete">
-
-                    Frete para sua região:
-                    <strong>
-                        R$ {{ valorFrete }}
-                    </strong>
-
-                </p>
-
-            }
-
+            <p class="resultado-frete" >
+                Frete padrão: <strong>19,90</strong>
+            </p>
         </div>
-
     </div>
-
 </div>

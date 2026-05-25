@@ -18,7 +18,6 @@ body{
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* TABELA */
 
 table{
 
@@ -63,7 +62,6 @@ td{
     font-size: 14px;
 }
 
-/* LINHAS */
 
 tbody tr{
 
@@ -75,7 +73,6 @@ tbody tr:hover{
     background-color: #f8f5ff;
 }
 
-/* BOTÕES */
 
 .btn-editar{
 
@@ -127,7 +124,6 @@ tbody tr:hover{
     transform: translateY(-2px);
 }
 
-/* BOTÃO INCLUIR */
 
 .btn-incluir{
 

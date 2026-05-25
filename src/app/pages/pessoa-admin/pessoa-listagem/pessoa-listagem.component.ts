@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import { PessoaService } from '../../core/services/pessoa.service';
 // import { Pessoa } from '../../core/types/types';
-import { PessoaServiceService } from '../../services/pessoa-service.service';
-import { Pessoa } from '../../model/tipos';
+import { PessoaServiceService } from '../../../services/pessoa-service.service';
+import { Pessoa } from '../../../model/tipos';
 import { Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 

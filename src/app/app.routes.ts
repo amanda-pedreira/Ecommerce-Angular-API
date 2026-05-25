@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { PessoaLoginComponent } from './pages/pessoa-login/pessoa-login.component';
+import { PessoaLoginComponent } from './pages/pessoa-admin/pessoa-login/pessoa-login.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContatosComponent } from './pages/contatos/contatos.component';
 import { AdminComponent } from './pages/admin/admin.component';
-import { PessoaFormComponent } from './pages/pessoa-form/pessoa-form.component';
-import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
+import { PessoaFormComponent } from './pages/pessoa-admin/pessoa-form/pessoa-form.component';
+import { PessoaListagemComponent } from './pages/pessoa-admin/pessoa-listagem/pessoa-listagem.component';
 import { ProdutosFormComponent } from './pages/produtos/produtos-form/produtos-form.component';
 import { ProdutosListagemComponent } from './pages/produtos/produtos-listagem/produtos-listagem.component';
 import { ProdutosComponent } from './pages/produtos-pagina/produtos/produtos.component';
@@ -17,10 +17,10 @@ import { ProdutosAlimentacaoComponent } from './pages/produtos-pagina/produtos-a
 import { ProdutosEquipamentosComponent } from './pages/produtos-pagina/produtos-equipamentos/produtos-equipamentos.component';
 import { DetalhesProdutoComponent } from './pages/detalhes-produto/detalhes-produto.component';
 import { ContatosListagemComponent } from './pages/contatos-listagem/contatos-listagem.component';
-import { CadastroUsuarioComponent } from './pages/cadastro-usuario/cadastro-usuario.component';
-import { LoginUsuarioComponent } from './pages/login-usuario/login-usuario.component';
-import { UsuarioListagemComponent } from './pages/usuario-listagem/usuario-listagem.component';
-import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfil-usuario.component';
+import { CadastroUsuarioComponent } from './pages/usuario/cadastro-usuario/cadastro-usuario.component';
+import { LoginUsuarioComponent } from './pages/usuario/login-usuario/login-usuario.component';
+import { UsuarioListagemComponent } from './pages/usuario/usuario-listagem/usuario-listagem.component';
+import { PerfilUsuarioComponent } from './pages/usuario/perfil-usuario/perfil-usuario.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 
 

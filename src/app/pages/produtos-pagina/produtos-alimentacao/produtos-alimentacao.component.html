@@ -1,45 +1,26 @@
 <div class="pagina-produtos">
 
     <div class="topo-produtos">
-
-        <span>
-            POWER STORE
-        </span>
-
-        <h1>
-            Alimentação
-        </h1>
-
-        <p>
-            Explore nossa linha completa de suplementos.
-        </p>
-
+        <span>POWER STORE</span>
+        <h1>Alimentação</h1>
+        <p>Explore nossa linha completa de suplementos.</p>
     </div>
 
     <div class="card-wrapper">
 
-             @for(produto of listaProdutos; track produto){
+        @for(produto of listaProdutos; track produto){
 
             @if(produto.status !== 'Inativo' && produto.categoria == 'Alimentação'){
 
                 <app-card
-
                     [id]="produto.id"
-
                     [imageUrl]="produto.imagem"
-
                     [nome]="produto.nome"
-
                     [preco]="produto.preco"
-
                     [categoria]="produto.categoria"
-
                     [estoque]="produto.estoque"
-
                     [status]="produto.status"
-
                     [detalhes]="produto.detalhes">
-
                 </app-card>
 
             }

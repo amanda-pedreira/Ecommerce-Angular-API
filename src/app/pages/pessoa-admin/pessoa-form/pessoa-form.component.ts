@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router, RouterLink, ActivatedRoute } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { PessoaServiceService } from '../../services/pessoa-service.service';
-import { Pessoa } from '../../model/tipos';
+import { PessoaServiceService } from '../../../services/pessoa-service.service';
+import { Pessoa } from '../../../model/tipos';
 
 @Component({
   selector: 'app-pessoa-form',
@@ -14,12 +14,8 @@ import { Pessoa } from '../../model/tipos';
 export class PessoaFormComponent {
 
   titulo:string = 'Cadastro de Funcionários';
-
   pessoaId?: string;
-
   pessoa: Pessoa = {} as Pessoa;
-
-
 
   
   constructor(
@@ -49,6 +45,7 @@ export class PessoaFormComponent {
   submeter(){
     if(this.pessoaId){
       this.service.editar(this.pessoa).subscribe(() =>{
+        alert('Funcionário alterado com sucesso!');
         this.router.navigate(['listar'])
       })
     }else{

@@ -5,9 +5,7 @@
     <table>
 
         <thead>
-
             <tr>
-
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
@@ -18,13 +16,9 @@
             </tr>
 
         </thead>
-
         <tbody>
-
             @for (contatos of listaContatos; track contatos){
-
                 <tr>
-
                     <td>#{{contatos.id}}</td>
 
                     <td>{{contatos.nome}}</td>
@@ -36,31 +30,12 @@
                     <td>{{contatos.mensagem}}</td>
 
                     <td>
+                        <a class="btn-editar" [href]="'mailto:' + contatos.email + '?subject=Resposta Power Suplementos&body=Olá, tudo bem?'"> Responder</a>
 
-                        <a
-                            class="btn-editar"
-                            [href]="'mailto:' + contatos.email + '?subject=Resposta Power Suplementos&body=Olá, tudo bem?'">
-
-                            Responder
-
-                        </a>
-
-                        <button
-                            class="btn-excluir"
-                            (click)="excluir(contatos.id!)">
-
-                            Excluir
-
-                        </button>
-
+                        <button class="btn-excluir" (click)="excluir(contatos.id!)"> Excluir </button>
                     </td>
-
                 </tr>
-
             }
-
         </tbody>
-
     </table>
-
 </div>
