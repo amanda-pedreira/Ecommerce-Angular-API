@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-carrinho',
   standalone: true,
@@ -57,5 +58,12 @@ export class CarrinhoComponent {
   valorFinal(){
     return this.total - this.desconto;
   }
-
+finalizarCompra(){
+  alert('Compra finalizada com sucesso!');
+  localStorage.removeItem('carrinho');
+  this.listaCarrinho = [];
+  this.total = 0;
+  this.desconto = 0;
+  this.cupom = '';
+}
 }

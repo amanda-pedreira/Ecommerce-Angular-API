@@ -87,7 +87,7 @@
             </strong>
         </div>
 
-            <button class="btn-finalizar">
+            <button class="btn-finalizar" (click)="finalizarCompra()" [disabled]="listaCarrinho.length === 0">
                 Finalizar compra
             </button>
 

@@ -230,15 +230,15 @@
       "status": "Ativo"
     },
     {
-      "id": "18",
-      "nome": "Corda de treino",
-      "preco": "34.90",
+      "nome": "Corda",
+      "preco": "35",
       "categoria": "Equipamentos",
+      "estoque": 6,
       "imagem": "https://images.pexels.com/photos/8032916/pexels-photo-8032916.jpeg",
-      "estoque": 28,
-      "detalhes": "Corda de pular leve e prática, ideal para treinos cardiovasculares e aquecimento.",
-      "destaque": "Não",
-      "status": "Ativo"
+      "destaque": "Sim",
+      "status": "Ativo",
+      "detalhes": "Teste",
+      "id": "dWOLWgr4jQ0"
     }
   ],
   "contatos": [
@@ -255,6 +255,20 @@
       "assunto": "Pedido atrasado",
       "mensagem": "Boa tarde. Ainda não recebi meu produto, como posso resolver?",
       "id": "zJUxAO1pDIc"
+    },
+    {
+      "nome": "Emi",
+      "email": "emilly@gmail.com",
+      "assunto": "Dúvida sobre produto",
+      "mensagem": "duvidas",
+      "id": "6OhlLhRL8vs"
+    },
+    {
+      "nome": "Amanda",
+      "email": "amandaluanap7@gmail.com",
+      "assunto": "Dúvida sobre produto",
+      "mensagem": "Oi tenho duvidas",
+      "id": "DGTeD1TNIgM"
     }
   ],
   "usuario": [
@@ -278,6 +292,13 @@
       "telefone": "11949074140",
       "senha": "12345",
       "id": "tl-nda3I3fA"
+    },
+    {
+      "nome": "Amanda Luana Pedreira",
+      "email": "amandaluanap7@gmail.com",
+      "telefone": "11949074140",
+      "senha": "123",
+      "id": "ZzmArmCQabQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

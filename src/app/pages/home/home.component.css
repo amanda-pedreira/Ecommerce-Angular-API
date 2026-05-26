@@ -152,6 +152,7 @@ body{
     width: 90%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
     padding-bottom: 80px;
